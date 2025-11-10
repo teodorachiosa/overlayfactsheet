@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta name="generator" content="Hugo 0.88.1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overlay Fact Sheet</title>
+  <meta name="description" content="Une tribune sur les outils de surcouche d’accessibilité.">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGCH8KPZG9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-NGCH8KPZG9');
+  </script>
+  <link rel="icon" href="../favicon.ico">
+  <link href="../screen.css" rel="stylesheet"/>
+  <meta content="summary" name="twitter:card"/>
+  <meta content="Overlay Fact Sheet" name="twitter:title"/>
+  <meta content="Une tribune sur les outils de surcouche d’accessibilité." name="twitter:description"/>
+  <meta content="/og-twitter.png" name="twitter:image"/>
+</head>
+
+<body>
+<a href="#main" class="skip-to-content-link">Aller au contenu</a>
+<header class="header text-align-center">
+  <svg aria-hidden="true" class="logo" height="120" width="120" viewBox="0 0 120 120"
+       xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M60 0c33.137 0 60 26.863 60 60s-26.863 60-60 60S0 93.137 0 60 26.863 0 60 0zm4.167 26.667h-25c-6.904 0-12.5 5.596-12.5 12.5v25c0 6.903 5.596 12.5 12.5 12.5h4.166v4.166c0 6.904 5.597 12.5 12.5 12.5h25c6.904 0 12.5-5.596 12.5-12.5v-25c0-6.903-5.596-12.5-12.5-12.5h-4.166v-4.166c0-6.904-5.597-12.5-12.5-12.5zM80.833 47.5a8.343 8.343 0 018.334 8.333v25a8.343 8.343 0 01-8.334 8.334h-25a8.343 8.343 0 01-8.333-8.334v-4.166h16.667c6.903 0 12.5-5.597 12.5-12.5V47.5h4.166zM64.167 30.833a8.343 8.343 0 018.333 8.334v4.166H55.833c-6.903 0-12.5 5.597-12.5 12.5V72.5h-4.166a8.343 8.343 0 01-8.334-8.333v-25a8.343 8.343 0 018.334-8.334h25z"
+      fill-rule="evenodd"/>
+  </svg>
+  <h1 class="title">Overlay Fact Sheet</h1>
+  <nav aria-label="Changer de langue">
+    <ul class="lang">
+      
+      
+      
+        
+        
+          
+            
+              <li><a href="../en/" lang="en">en <span class="sr-only">english</span></a></li>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+            
+              <li>fr <span class="sr-only">français</span></li>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+            
+              <li><a href="../pt-br/" lang="pt-br">pt-br <span class="sr-only">português brasileiro</span></a></li>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <li><a href="../ja/" lang="jp">ja <span class="sr-only">日本語</span></a></li>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <li><a href="../de/" lang="de-de">de <span class="sr-only">deutsch</span></a></li>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <li><a href="../id/" lang="id">id <span class="sr-only">id</span></a></li>
+            
+          
+        
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <li><a href="../nl/" lang="nl">nl <span class="sr-only">nederlands</span></a></li>
+            
+          
+        
+          
+        
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <li><a href="../ro/" lang="ro">ro <span class="sr-only">română</span></a></li>
+            
+          
+        
+      
+    </ul>
+  </nav>
+</header>
+<nav aria-labelledby="toc">
+  <div class="container">
+    <h2 id="toc">Sommaire</h2>
+    <ol>
+      <li>
+        <a href="#what-is-a-web-accessibility-overlay">Qu’est-ce qu’un outil de surcouche d’accessibilité&nbsp;?</a>
+      </li>
+      <li>
+        <a href="#strengths-and-weaknesses-of-overlay-widgets">Avantages et inconvénients de ces outils</a>
+      </li>
+      <li>
+        <a href="#strengths-and-weaknesses-of-automated-repair">Avantages et inconvénients de la correction automatisée</a>
+      </li>
+      <li>
+        <a href="#fitness-for-achieving-compliance-with-accessibility-standards">Aptitude à se conformer aux normes d’accessibilité</a>
+      </li>
+      <li>
+        <a href="#privacy">Protection des données personnelles</a>
+      </li>
+      <li>
+        <a href="#in-their-own-words">Selon leurs propres mots</a></li>
+      <li>
+        <a href="#conclusion">Conclusion</a>
+      </li>
+      <li>
+        <a href="#statement-from-sponsors-and-signatories-to-this-fact-sheet">Déclaration des sponsors et des signataires de cette tribune</a>
+      </li>
+      <li><a href="#additional-reading">Lectures complémentaires</a></li>
+    </ol>
+  </div>
+</nav>
+<main id="main">
+  <div class="container">
+    <h2 id="what-is-a-web-accessibility-overlay">Qu’est-ce qu’un outil de surcouche d’accessibilité&nbsp;?</h2>
+    <p class="summary">Un outil de surcouche est un terme générique désignant une technologie qui vise à améliorer l’accessibilité d’un site web. Il s’agit d’un code provenant d’un tiers (généralement en JavaScript) dont l’objectif est d’apporter des améliorations au code <i lang="en">front</i> du site&nbsp;web.</p>
+    <p>Ce type d’outil qui prétend améliorer l’accessibilité existe depuis la fin des années 1990 avec des produits comme <a href="https://fr.wikipedia.org/wiki/ReadSpeaker">Readspeaker</a> et <a href="https://fr.wikipedia.org/wiki/BrowseAloud">Browsealoud</a>. Ils ajoutaient des fonctionnalités de synthèse vocale au(x) site(s) web sur lesquels ils étaient installés.</p>
+    <p>Des produits similaires sont ensuite apparus sur le marché, ajoutant d’autres outils à leur logiciel. Ceux-ci permettent à l’internaute de contrôler des éléments tels que la taille et la couleur des polices afin d’améliorer la lisibilité.</p>
+		<p>Certains outils de surcouche plus récents visent à résoudre les problèmes dans le code du site sauf que cela empêche les technologies d’assistance d’être utilisées facilement. Ils appliquent à la page un script qui analyse le code et tente automatiquement de résoudre le problème.</p>
+		<p>Quelques exemples d’outils de surcouche d’accessibilité au web (par ordre alphabétique)&nbsp;:</p>
+    <ul>
+	    <li>AccessiBe</li>
+      <li>Accessibility Adapter</li>
+	    <li>Accessiblelink</li>
+      <li>Accessiplus</li>
+      <li>Accessiway</li>
+      <li>Adally</li>
+      <li>Adapte Mon Web (Adapt my Web)</li>
+      <li>AdaptifY</li>
+      <li>Allyable</li>
+      <li>Alchemy*</li>
+      <li>Amaze</li>
+      <li>AudioEye</li>
+      <li>Bakh Fix</li>
+      <li>DIGIaccess</li>
+      <li>Eye-Able.com</li>
+      <li>Equally.ai</li>
+      <li>EqualWeb</li>
+      <li>FACIL'iti</li>
+      <li>MaxAccess</li>
+      <li>Poloda AI</li>
+      <li>Purple Lens (Rebranded as Pluro)</li>
+      <li>ReciteME</li>
+      <li>RentCafe</li>
+      <li>Sentinel*</li>
+      <li>TruAbilities</li>
+      <li>True Accessibility</li>
+      <li>UsableNet Assistive</li>
+      <li>UserWay</li>
+      <li>WebAbility</li>
+    </ul>
+    <p>* indique que ces produits ne sont plus développés ou commercialisés.</p>
+    <p>Les outils de surcouche sont parfois vendus en marque blanche (vendus sous d’autres noms) ou renommés pour certains marchés. Cette liste n’est donc pas exhaustive.</p>
+
+    <h2 id="strengths-and-weaknesses-of-overlay-widgets">Avantages et inconvénients de ces outils</h2>
+    <p class="summary">Les outils de surcouche sont inutiles et mal placés dans la <i lang="en">stack</i> technologique.</p>
+    <p>Comme indiqué ci-dessus, certains outils de surcouche contiennent des <i lang="en">widgets</i> qui présentent une série de contrôles modifiant la présentation de la page sur laquelle ils se trouvent. Selon le produit, ces modifications peuvent avoir pour effet de changer le contraste de la page, d’agrandir la taille du texte de la page ou d’apporter d’autres changements à la page dans le but d’améliorer l’expérience des personnes handicapées.</p>
+    <p>Pour les néophytes, ces fonctions peuvent sembler bénéfiques, mais leur valeur ajoutée est largement exagérée parce que les internautes que ces fonctions prétendent servir disposent déjà des fonctions nécessaires sur leur ordinateur, soit en tant que fonction intégrée, soit en tant que logiciel supplémentaire dont la personne a besoin pour accéder non seulement au web, mais aussi à tous les logiciels.</p>
+    <p>Sur ce dernier point, il est erroné de croire que les fonctionnalités fournies par l’outil de surcouche seront d’une grande utilité pour les personnes concernées, car si ces fonctionnalités étaient nécessaires pour utiliser le site web, elles seraient nécessaires pour tous les sites web avec lesquels ces internautes interagissent. Au lieu de cela, l’outil de surcouche est, au mieux, une fonctionnalité redondante avec ce que les personnes qui visitent votre site possèdent déjà.</p>
+
+    <h2 id="strengths-and-weaknesses-of-automated-repair">Avantages et inconvénients de la correction automatisée</h2>
+    <p class="summary">Bien que certaines corrections automatisées soient possibles, il convient de décourager les commanditaires de sites web d’utiliser un outil de surcouche comme solution à long terme.</p>
+    <p>Certains outils de surcouche ont comme ambition de fournir des corrections d’accessibilité directement sur la page où l’outil a été ajouté. Ces corrections sont appliquées lorsque la page est chargée dans le navigateur de la personne visitant le site.</p>
+    <p>S’il est vrai qu’un ensemble de problèmes d’accessibilité, basique, peut être réparé de cette manière, la nature, l’étendue et la précision de ces corrections sont limitées par un certain nombre de facteurs importants&nbsp;:</p>
+    <ul>
+      <li>L’application automatisée d’alternatives textuelles pour les images n’est pas fiable</li>
+      <li>La correction automatisée des étiquettes de champ, de la gestion des erreurs et du contrôle du <i lang="en">focus</i> sur les formulaires n’est pas fiable</li>
+      <li>La correction automatisée de l’accès au clavier n’est pas fiable</li>
+      <li>Les interfaces d’utilisation modernes basées sur des composants, telles que celles qui utilisent ReactJS, Angular ou Vue, peuvent modifier l’état de tout ou partie de la page indépendamment de l’outil de surcouche. Cela rend l’outil incapable de corriger ces changements de contenu pilotés par JavaScript</li>
+      <li>Les corrections de la page peuvent soit ralentir le temps de chargement de la page, soit provoquer des changements de page inattendus pour les personnes utilisant des technologies d’assistance</li>
+    </ul>
+    <p>En outre, les outils de surcouche ne réparent pas le contenu des fichiers Flash, Java, Silverlight, PDF, HTML5 Canvas, SVG ou des fichiers multimédias.</p>
+
+    <h2 id="fitness-for-achieving-compliance-with-accessibility-standards">Aptitude à se conformer aux normes d’accessibilité</h2>
+    <p class="summary">L’utilisation d’un outil de surcouche peut améliorer la conformité en s’appuyant sur quelques exceptions des principales normes d’accessibilité, toutefois un outil de surcouche ne permet pas d’obtenir une conformité totale.</p>
+    <p>Parmi les nombreuses affirmations des vendeurs d’outils de surcouche, il y a celle selon laquelle l’utilisation de leur produit rendra le site conforme aux normes d’accessibilité telles que WCAG 2.x, aux normes connexes et dérivées, et aux lois qui imposent le respect de ces normes.</p>
+    <blockquote class="conformance-quote">La conformité à une norme signifie que vous répondez ou satisfaisez aux "exigences" de la norme. Dans les WCAG 2.0, les "exigences" sont les critères de succès. Pour se conformer aux WCAG 2.0, il faut satisfaire aux critères de succès, c’est-à-dire qu’il n’y a pas de contenu qui invalide les critères de succès.
+      <cite>
+        <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance">Understanding
+          WCAG 2.1: Understanding Conformance</a>
+      </cite>
+    </blockquote>
+    <p>Étant donné que la conformité est définie comme le respect de toutes les exigences de la norme, l’incapacité avérée de ces produits à résoudre tous les problèmes possibles signifie qu’ils ne peuvent pas rendre un site web conforme. Les produits commercialisés avec de telles allégations doivent être considérés avec beaucoup de scepticisme.</p>
+  </div>
+
+  <div class="container">
+    <h2 id="privacy">Protection des données personnelles</h2>
+    <p class="summary">L’ajout d’un outil de surcouche à votre site peut aller à l’encontre des préférences des internautes en matière de protection de la vie privée et peut entraîner un risque de non-conformité avec le RGPD, le CCPA, etc.</p>
+    <p>Les outils de surcouche qui activent automatiquement certains paramètres, comme ceux destinés aux personnes utilisant des lecteurs d’écran ou de reconnaissance vocale, le font en détectant si une technologie d’assistance fonctionne sur l’appareil. Cela révèle que la personne qui utilise l’appareil à ce moment-là possède un handicap. Dans certains cas, comme celui des personnes utilisant des lecteurs d’écran dont la majorité est aveugle ou malvoyante, cela révèle encore plus de détails sur la nature de leur handicap. Tout comme l’âge, l’origine ethnique ou le sexe, le handicap est une information personnelle sensible. Ce ne sont pas des données qui devraient être collectées sans le consentement éclairé de la personne à laquelle elles appartiennent.</p>
+    <p>Il a été constaté que certains outils de surcouche conservent les paramètres des personnes visitant les sites qui utilisent le même outil de surcouche. Pour ce faire, un <i lang="en">cookie</i> est installé sur l’ordinateur des internautes. Lorsque la personne qui visite le site active un paramètre dans un outil de surcouche, cet outil active automatiquement cette fonction sur d’autres sites. Bien que les sociétés commercialisant des outils de surcouche puissent penser qu’il s’agit d’une bonne chose pour les internautes, au final le gros problème en matière de protection de la vie privée est que l’internaute n’a jamais accepté d’être suivi et qu’il n’y a pas non plus de possibilité de se désengager. En raison de cette absence de possibilité de retrait (autre que la désactivation explicite de ce paramètre), l’outil de surcouche court le risque d’être non conforme par rapport au règlement général sur la protection des données (RGPD) et de la loi californienne sur la protection de la vie privée des consommateurs et des consommatrices (CCPA).</p>
+  </div>
+
+  <div class="in-their-own-words">
+    <div class="container">
+      <h2 id="in-their-own-words">Selon leurs propres mots</h2>
+      <p class="summary">De nombreuses personnes handicapées ont exprimé leur mécontentement à l’égard des outils de surcouche. Comme le montre les témoignages ci-dessous, les outils de surcouche peuvent présenter des problèmes d’accessibilité suffisamment importants pour que ces personnes prennent des mesures afin de bloquer activement l’apparition des ces outils.</p>
+      <p>Remarque&nbsp;: bien que cette section mentionne spécifiquement certaines sociétés commercialisant des outils de surcouche, ces témoignages s’appliquent également aux autres et s’accordent sur le fait que ces outils ont un impact négatif sur l’expérience d’utilisation.</p>
+    </div>
+
+    <div class="quotes">
+      <blockquote id="derekriemer" class="quote">
+        ...en supposant que votre outil puisse faire un bon travail pour rendre quelque chose accessible, il peut faire un travail encore meilleur pour rendre quelque chose accessible en fonctionnant directement sur la machine de l’internaute ayant accès au code machine et aux API de la machine.
+        <cite>
+          <a class="quote-source" href="https://twitter.com/DerekRiemer/status/1365136025861775364">DerekRiemer</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="wilfsplodnokit" class="quote">
+        ...j’ai finalement réussi à accéder à mon compte @NameCheap en bloquant #AccessiBe dans mon fichier Windows Hosts. Je ne devrais pas avoir besoin de faire cela pour utiliser l’Internet. AccessiBe doit être AccessiBeGone
+        <cite>
+          <a class="quote-source"
+             href="https://twitter.com/WilfSplodNokit/status/1365478393895153664">WilfSplodNokit</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="geauxender" class="quote">
+        ...je sais avec une certitude absolue que tous les sites qui ont déployé un outil de surcouche depuis un an et demi ont été moins utilisables pour ma femme et moi, tous deux aveugles.
+        <cite>
+          <a class="quote-source" href="https://twitter.com/GeauxEnder/status/1364943889132646408">GeauxEnder</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="big_d01" class="quote">
+        ...Il est toujours pénible d’essayer de lire l’article sur un appareil mobile à cause de l’interruption constante toutes les quelques secondes. Si l’on considère que tous les sites utilisant votre service ont également ce problème... Non.
+        <cite>
+          <a class="quote-source" href="https://twitter.com/Big_D01/status/1365187231829254144">Big_D01</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="w9fyi" class="quote">
+        ...Rendre une page web accessible demande du travail, et dire simplement à une entreprise qu’elle peut installer votre extension est absolument insensé, vous construisez et concevez l’accessibilité dans une page web en utilisant les normes WCAG.
+        <cite>
+          <a class="quote-source" href="https://twitter.com/w9fyi/status/1366019424415866880">w9fyi</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="kevmarmol_ct" class="quote">
+        ...Suggérer qu’une ligne de code n’est pas chère et qu’il faut donc la faire suggère que les vies des handicapés ne valent pas la peine d’être investies non plus. #a11y
+        <cite>
+          <a class="quote-source" href="https://twitter.com/Kevmarmol_CT/status/1365005141594750986">Kevmarmol_CT</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="eluberoff" class="quote">
+        @AccessiBe Pour démontrer ma bonne foi, voici un rapide audit gratuit de https://t.co/1mQGCCtnIs. Vous capturez "tab" qui est la façon standard de naviguer. Il n’y a aucun moyen de ne pas activer votre outil si je veux naviguer sur la page. Une fois que l’outil est activé, il se passe des choses extraordinaires.
+        <cite>
+          <a class="quote-source" href="https://twitter.com/eluberoff/status/1366386598770839557">eluberoff</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="turtlecatpurrz" class="quote">
+        #AccessiBe rend les sites plus difficiles à utiliser en entravant la navigation et en modifiant les barrières d’accès sur une page, au lieu de les réparer. Un étudiant et moi sommes tombés sur un site web "amélioré" et, à ma grande honte, nous sommes partis parce que naviguer dans ce fouillis était au-delà de mes compétences, ce jour-là.
+        <cite>
+          <a class="quote-source"
+             href="https://twitter.com/turtlecatpurrz/status/1365099776207851523">turtlecatpurrz</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="singingtigress" class="quote">
+        Les outils de surcouche d’accessibilité ne sont pas la solution, et AccessiBe ne fait pas exception à la règle. En tant qu’utilisateur d’un lecteur d’écran, de nombreux sites sont devenus moins utilisables pour moi avec cette surcouche. Le fait de discréditer des professionnels et des défenseurs de l’accessibilité réputés ne me fera pas changer d’avis. https://t.co/ZgFt8JtsbZ
+        <cite>
+          <a class="quote-source"
+             href="https://twitter.com/SingingTigress/status/1364922970670583815">SingingTigress</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="marcozehe" class="quote" lang="de">
+        À mes abonnés qui utilisent le lecteur d’écran&nbsp;: vous avez peut-être déjà entendu parler d’#Accessibe, un outil de surcouche qui prétend rendre plus accessibles les pages dans lesquelles il est intégré. Je ne veux pas entrer dans les détails. En bref&nbsp;: du grand n’importe quoi. Pas touche !
+        <cite>
+          <a class="quote-source" href="https://twitter.com/MarcoZehe/status/1365587195596181507">MarcoZehe</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="twithoff" class="quote">
+        Les solutions automatisées qui promettent de rendre votre site accessible ne le peuvent pas. Il faut plus que de l’automatisation pour répondre à cette exigence. Vous ne serez pas à l’abri d’une responsabilité. Vous aurez presque à coup sûr un impact négatif sur vos clients handicapés.
+        <cite>
+          <a class="quote-source" href="https://twitter.com/twithoff/status/1364957890050686976">twithoff</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="borrisinabox" class="quote">
+        Chaque fois que je vais sur un site web et que j’entends la notification #accessiBe indiquant que ce site est adapté à mon lecteur d’écran, je sais que mon bloqueur ne fonctionne pas correctement et que je vais vivre une expérience infernale sur ce site web particulier. 
+        <cite>
+          <a class="quote-source" href="https://twitter.com/BorrisInABox/status/1364295702696890370">BorrisInABox</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="racheleditullio" class="quote">
+        J’ai essayé d’utiliser ce site @AccessiBe avec VoiceOver dans Chrome sur iOS. La note de 4 étoiles est annoncée comme "imprononçable" 🤦‍♀️ https://t.co/f4MxQ2eLLP
+        <cite>
+          <a class="quote-source"
+             href="https://twitter.com/racheleditullio/status/1365739183839588357">racheleditullio</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="kit_flowerstorm" class="quote">
+        J’ai écrit un email à leur service client en détaillant que je ne peux pas utiliser leur site à cause de la surcouche, mais... Je suis vraiment déçue, mais j’espère qu’ils m’écouteront. @Goodfair_ - s’il vous plaît, arrêtez d’utiliser AccessiBe.
+        <cite>
+          <a class="quote-source"
+             href="https://twitter.com/kit_flowerstorm/status/1364605580405575681">kit_flowerstorm</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="atfarnum" class="quote">
+        Je ne suis pas un expert en accessibilité, juste un utilisateur de lecteur d’écran avec des compétences décentes qui vous dit que ce fil est juste et que mon expérience avec #AccessiBe est qu’il rend les sites avec des problèmes d’accessibilité encore plus difficiles à contourner. https://t.co/cfyrEqXwTy
+        <cite>
+          <a class="quote-source" href="https://twitter.com/atfarnum/status/1365075850861887490">atfarnum</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="smartudlab" class="quote">
+        ...Si vous êtes aveugle ou malvoyant et que vous utilisez des technologies d’assistance telles que les lecteurs d’écran, vous avez peut-être commencé à trouver des sites web populaires de moins en moins utilisables... cette page décrit comment interdire à AccessiBe d’atteindre votre ordinateur... https://t.co/qbiKvolizS
+        <cite>
+          <a class="quote-source" href="https://twitter.com/smartudlab/status/1365651400638615559">smartudlab</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="kellylford" class="quote">
+        D’accord, cela me semble une mauvaise chose. Une chaîne locale, Fleet Farm, utilise désormais AccessiBe. La fonction de recherche d’emplacement n’est pas du tout adaptée. Voici ce que j’obtiens maintenant au début de la page de résultats.
+        <cite>
+          <a class="quote-source" href="https://twitter.com/kellylford/status/1363698942152757253">kellylford</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="mhorspool" class="quote">
+        Heureusement que Firefox bloque leur détection de l’accessibilité. Pour moi, le focus saute partout lorsque #AccessiBe est activé. Lorsqu’il est désactivé, il se comporte de lui-même.
+        <cite>
+          <a class="quote-source" href="https://twitter.com/mhorspool/status/1364983194546757634">mhorspool</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="cswordpress" class="quote">
+        Il n’existe aucun outil automatisé capable de détecter avec précision les problèmes d’accessibilité dans plus de 30 % des cas. 0. Tous ceux qui travaillent dans ce domaine depuis au moins une semaine le savent. #AccessiBe
+        <cite>
+          <a class="quote-source" href="https://twitter.com/cswordpress/status/1365042078401576968">cswordpress</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="wtbdavidg" class="quote">
+        Il existe un outil parfaitement pratique pour rendre les sites web accessibles. Il s’agit d’un programmeur. Les besoins qui comptent pour rendre un site web accessible sont ceux des utilisateurs. Si vous ne pouvez pas répondre à ces besoins, vous ne pouvez pas faire face aux coûts de base de votre activité.
+        <cite>
+          <a class="quote-source" href="https://twitter.com/WTBDavidG/status/1366074519086055425">WTBDavidG</a>
+        </cite>
+      </blockquote>
+
+      <blockquote id="catchthesewords" class="quote">
+        Lorsque #AccessiBe est activé, la page est inondée de titres. Beaucoup de titres de niveau 2. Le titre de chaque téléphone reste un titre dans les deux versions de la page, mais lorsqu’il est activé, des éléments tels que le coût, l’affichage et tous les autres composants des tableaux deviennent également des titres.
+        <cite>
+          <a class="quote-source"
+             href="https://twitter.com/CatchTheseWords/status/1364915942157922308">CatchTheseWords</a>
+        </cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 id="conclusion">Conclusion</h2>
+    <p class="summary">Aucun outil de surcouche sur le marché ne peut rendre un site web totalement conforme à une norme d’accessibilité existante et ne peut donc pas éliminer le risque juridique.</p>
+    <p>L’accessibilité sur le web est un défi de taille, tant pour les propriétaires de sites web que pour les personnes visitant ces sites. L’invention de nouvelles approches pour résoudre ce problème doit être saluée.</p>
+    <p>Toutefois, dans le cas des outils de surcouche, en particulier celles qui tentent d’ajouter des gadgets présentant des fonctions d’assistance, le défi n’est pas relevé. Ce qui est encore plus problématique, c’est le marketing trompeur de certaines sociétés commercialisant des outils de surcouche qui promettent que la mise en œuvre de leur produit permettra aux sites de leur clientèle de se conformer immédiatement aux lois et aux normes.</p>
+    <p>L’inefficacité des outils de surcouche fait l’objet d’un large consensus parmi les professionnels de l’accessibilité, comme le montre l’enquête WebAIM sur les professionnels de l’accessibilité du Web&nbsp;:</p>
+    <blockquote id="webaim-quote">Une forte majorité (67 %) des personnes interrogées estiment que ces outils ne sont pas du tout ou pas très efficaces. Les répondants handicapés sont encore moins favorables, 72 % d’entre eux estimant qu’ils ne sont pas du tout ou pas très efficaces, et seulement 2,4 % qu’ils sont très efficaces.</blockquote>
+
+    <h2 id="statement-from-sponsors-and-signatories-to-this-fact-sheet">Déclaration des sponsors et des signataires de cette tribune</h2>
+    <p>En conséquence des informations ci-dessus&nbsp;:</p>
+    <ol>
+      <li>Nous ne préconiserons, ne recommanderons ni n’intégrerons jamais un outil de surcouche qui se présente de manière trompeuse comme fournissant une conformité automatisée aux lois ou aux normes</li>
+      <li>Nous préconiserons toujours la résolution des problèmes d’accessibilité à la source de l’erreur initiale</li>
+      <li>Nous refuserons de rester silencieux lorsque les vendeurs d’outil de surcouche utilisent la tromperie pour commercialiser leurs produits</li>
+      <li>Plus spécifiquement, nous plaidons par la présente pour la suppression des outils de surcouches d’accessibilité du web et encourageons les propriétaires de sites qui ont mis en œuvre ces produits à utiliser des stratégies plus robustes, indépendantes et permanentes pour rendre leurs sites plus accessibles.</li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h3 id="signed-by">Signé par&nbsp;:</h3>
+      <p class="summary">Certaines sociétés commercialisant des outils de surcouche ont tenté de présenter cette tribune comme une tentative de leurs concurrents de les discréditer. De telles affirmations sont un cas d’école de tentative de <a href="https://fr.wikipedia.org/wiki/Gaslighting" lang="en">gaslighting</a> pour détourner les critiques.</p>
+      <p>À ce jour, les signataires de la tribune contre les outils de surcouche d’accessibilité sont les suivants&nbsp;:</p>
+      <ul>
+        <li>Contributeurs et contributrices, éditeurs et éditrices des spécifications <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>, <abbr title="Accessible Rich Internet Applications">ARIA</abbr>, et <abbr title="Hypertext Markup Language">HTML</abbr></li>
+        <li>Consultants et consultantes des États-Unis, du Royaume-Uni, des Pays-Bas, de la Californie, du Japon, de l’Allemagne, de la France, de la Suède, de la Norvège, de la Belgique, de la Pologne, de l’Australie, du Danemark, de l’Italie, du Luxembourg et d’autres pays encore.</li>
+        <li>Experts et expertes internes en accessibilité pour des entreprises telles que Google, Microsoft, Apple, NBC, Squarespace, BBC, VMWare, Shopify, ServiceNow, Dell, Lyft, HCL, Costco, Expedia, eBay, Cigna, Target, CVS Health, Kijiji, Orange, Pearson, Mitre, Sapient, et Pearson Assessments</li>
+        <li>Experts et expertes internes en accessibilité d’établissements d’enseignement supérieur tels que Syracuse, CSU, Stuttgart Media University, University of Massachusetts, San Francisco State University, Gallaudet University, Carnegie Mellon, West Virginia University et MIT</li>
+        <li>Avocats et avocates représentant les personnes handicapées</li>
+        <li>Contributeurs aux lecteurs d’écrans tels que JAWS et NVDA</li>
+        <li>Un grand nombre d’utilisateurs et utilisatrices finaux handicapés</li>
+      </ul>
+      <p>En bref, la liste des signataires ci-dessous est composée de personnes qui ont une expertise dans ce domaine et qui ont consacré leur carrière professionnelle à l’amélioration de l’accessibilité ou qui sont des personnes handicapées (ou les deux). Considérer les noms énumérés ci-dessous comme des "concurrents" est à la fois inexact et ne tient pas compte de l’essentiel&nbsp;: les outils de surcouche ne sont pas un moyen efficace de garantir l’accessibilité - un point sur lequel toutes les personnes énumérées ci-dessous sont d’accord.</p>
+
+    
+    <ol>
+      <li>Karl Groves, Digital Accessibility Consultant at AFixt and Founder of Eventably</li>
+      <li>Matt King, Chair, W3C ARIA Authoring Practices Task Force and W3C ARIA and Assistive Technologies Community Group</li>
+      <li>Bill Dengler, totally blind computer science student and code contributor to the NVDA screen reader,
+        Swarthmore College, Philadelphia
+      </li>
+      <li>Nicolas Steenhout, Independent accessibility consultant</li>
+      <li>Rian Rietveld, web accessibility specialist</li>
+      <li>Weston Thayer, Founder, Assistiv Labs</li>
+      <li>Denis Boudreau, Accessibility consultant</li>
+      <li>Meryl K. Evans, accessibility advocate</li>
+      <li>Makoto Ueki, Web accessibility consultant, Infoaxia</li>
+      <li>Michael Spellacy, Accessibility Consultant</li>
+      <li>Helen Burge, Accessibility Consultant</li>
+      <li>Léonie Watson, Director, TetraLogical</li>
+      <li>Eric Eggert, Co-Founder, outline</li>
+      <li>Dale Reardon - Founder &amp; CEO of TravelForAll.Guide</li>
+      <li>Bram Duvigneau, Co-Founder, Firm Ground</li>
+      <li>Jason Gill - Certified Web Accessibility Specialist</li>
+      <li>Michael Ausbun, CPWA, Web Accessibility Engineer, Prime Access Consulting, Inc.</li>
+      <li>Ronny Hendriks - Accessibility Consultant, Toegankelijk Online</li>
+      <li>Charles Hall, Invited Expert W3C AGWG</li>
+      <li>Hai Nguyen Ly, Accessibility Advocate</li>
+      <li>David Luhr, Accessibility Consultant</li>
+      <li>Justin L. Yarbrough, Accessibility Specialist, Rio Salado College</li>
+      <li>Murray Inman, Instructional Design and Accessibility, Rio Salado College</li>
+      <li>Hidde de Vries, accessibility specialist and front-end developer</li>
+      <li>James Fleeting, Technical Director, Monkee-Boy</li>
+      <li>Alex Tait, Accessibility Specialist, AT Fresh Solutions</li>
+      <li>Michael Fairchild, Accessibility consultant</li>
+      <li>Gijs Veyfeyken, web accessibility specialist, Five Oaks</li>
+      <li>Dennis Lembree, Web Axe &amp; Easy Chirp</li>
+      <li>Adrian Roselli</li>
+      <li>Rob Whiting, Head of Research &amp; Design, Merlan Ltd.</li>
+      <li>Kitty Giraudel, Accessibility Specialist, Gorillas</li>
+      <li>Derek Mohr, Front-end Developer, Mighty in the Midwest</li>
+      <li>Alastair Campbell, Director of Accessibility, Nomensa</li>
+      <li>Anders Fredericksen, Level Access</li>
+      <li>Zoë Bijl, Senior Accessibility Engineer, CrowdStrike</li>
+      <li>Jonathan Avila, Level Access</li>
+      <li>Seth Kane, CPWA</li>
+      <li>Sheri Byrne-Haber, Senior accessibility evangelist</li>
+      <li>Jared Smith, Associate Director, WebAIM</li>
+      <li>木達 一仁 (Kazuhito Kidachi)</li>
+      <li>Yakim van Zuijlen, Designer</li>
+      <li>Shannon Urban, Director of Accessibility, EVERFI</li>
+      <li>Todd Libby, Accessibility Advocate and Consultant</li>
+      <li>David Monnehay, Atalan</li>
+      <li>Joschi Kuphal, CPWA &amp; CEO, tollwerk</li>
+      <li>Romain Deltour, web/accessibility/ebook specialist</li>
+      <li>Craig Francis, Code Poets Limited</li>
+      <li>Erik Gustafsson Spagnoli, Accessibility Specialist, Axess Lab</li>
+      <li>Dan Payne, Accessibility consultant</li>
+      <li>Ben Tillyer, Head of Digital Accessibility, University of Oxford</li>
+      <li>Belinda Dow, Digital Accessibility Consultant</li>
+      <li>Matt Obee, Staff Accessibility Designer, GitHub</li>
+      <li>Florian Beijers, Accessibility Consultant, Developer, Screenreader User</li>
+      <li>Donna Vitan, Design Systems Nerd</li>
+      <li>Ruben Nic, Web Accessibility/Senior Engineer, Webflow</li>
+      <li>Dennis Deacon, Accessibility Consultant</li>
+      <li>Nicolas Loye, CTO, Actency</li>
+      <li>Rachele DiTullio, accessibility engineer, CPWA</li>
+      <li>Gerard K. Cohen, self</li>
+      <li>Vincent Aniort, digital accessibility expert, Orange SA</li>
+      <li>Arthur Rigaud, Accessibility Specialist and Front-End Developer</li>
+      <li>Gary Jones, WordPress VIP</li>
+      <li>Andrew Nevins, CPWA, Director at TabAble</li>
+      <li>Chris Heilmann, Principal Product Manager for Developer Tools</li>
+      <li>Bruce Lawson, greedy accessibility consultant</li>
+      <li>Peter Goes, Front-end developer, De Voorhoede</li>
+      <li>Geoff Mortstock, Accessibility Consultant</li>
+      <li>Marcus Herrmann, Web Accessibility Specialist and front-end developer</li>
+      <li>Kelly Childs, Lead Developer, Be Accessible, Inc.</li>
+      <li>Matthew Hallonbacka</li>
+      <li>Kelly Wills, Access Technology Specialist, CPWA</li>
+      <li>Joan Preston, Web Accessibility Coordinator, California State University, Long Beach</li>
+      <li>Jon Gibbins, digital accessibility consultant, Dotjay Ltd</li>
+      <li>Alicia Jarvis</li>
+      <li>Anthony Fernando, CPWA, Accessibility QA Manager, Pearson</li>
+      <li>Jennifer Strickland, Senior HCD + Accessibility Engineer at MITRE, Accessibility Consultant at Level Access
+      </li>
+      <li>Lainey Feingold - lawyer and author, Law Office of Lainey Feingold</li>
+      <li>Andrew Hayward, Accessibility Engineer</li>
+      <li>Jean Ducrot, Accessibility Engineer, CPWA</li>
+      <li>Manuel Razzari - Accessibility educator, Buenos Aires National Technological University, Argentina</li>
+      <li>Zack Kline, Accessibility Tester, ISoftStone</li>
+      <li>Anna E. Cook - Senior Inclusive Designer, Microsoft</li>
+      <li>Alex Cooper - Software Engineer, Digital Inclusion, American Foundation for the Blind</li>
+      <li>Christophe Strobbe, researcher and lecturer in <abbr>HCI</abbr> and accessibility, Hochschule der Medien, Stuttgart (until June 2022); accessibility specialist at Eleven Ways (sine July 2022)</li>
+      <li>Eric Bailey, The A11Y Project Maintainer</li>
+      <li>Andre Polykanine, software engineer, web accessibility specialist, screen reader user</li>
+      <li>Ben Myers, Software Engineer</li>
+      <li>Olivier Keul, Accessibility consultant, Temesis</li>
+      <li>Bogdan Cerovac, WAS, front-end developer and accessibility lead</li>
+      <li>Lori Samuels, Accessibility Director, NBCUniversal</li>
+      <li>Ryan Leisinger - UX Manager Department of Licensing WA State</li>
+      <li>Ian Lloyd, Accessibility Engineer</li>
+      <li>Pavel Pomerantsev, web accessibility engineer, Squarespace</li>
+      <li>Dominik Wilkowski, People Director, Thinkmill</li>
+      <li>Rowdy Rabouw, web and app developer, double-R webdevelopment</li>
+      <li>Jen Smith, Director, Visa Accessibility</li>
+      <li>Toufic Sbeiti, accessibility advocate</li>
+      <li>Amy Carney, CPWA, accessibility consultant &amp; front-end web developer, Digilou</li>
+      <li>Carly Gerard CPWA, Web Accessibility Engineer, Western Washington University</li>
+      <li>Haben Girma, Human Rights Lawyer</li>
+      <li>Katriel Paige, Accessibility Consultant, Fox Design Studios LLC</li>
+      <li>Adrianne Mallett, Software Engineer</li>
+      <li>Krista Greear</li>
+      <li>Kim Krause Berg, CPACC, QA Accessibility Analyst, BMTX (formerly Bank Mobile)</li>
+      <li>Joseph Dolson</li>
+      <li>Ashley Hannan, Accessibility Advocate</li>
+      <li>Cara Hall, Accessibility Advocate</li>
+      <li>Paul Grenier, Web Developer</li>
+      <li>Glenda Sims, Accessibility consultant</li>
+      <li>JF Hector Labram, WAS, Principal Front-End Engineer, Kooth Plc</li>
+      <li>Anne-Mieke Bovelett, Accessibility Advocate</li>
+      <li>Radimir Bitsov, Web Accessibility and Performance Engineer</li>
+      <li>Beatriz González Mellídez, Principal Product Design, CPWA, CPUX-RE</li>
+      <li>Wilfred Nas, Product Owner / User interface consultant</li>
+      <li>Shawn Thompson, Digital Accessibility Advocate</li>
+      <li>Kim Johannesen, CEO and Accessibility Consultant, Shift ApS</li>
+      <li>Marco Hengstenberg, Front End Web Developer and Accessibility Consultant</li>
+      <li>Nicola Saunders, Front-End Developer, Studio 24 Ltd
+      <li>Rogier Barendregt, Senior digital product designer, Rg/B</li>
+      <li>Jeremy Keith, Founder, Clearleft</li>
+      <li>Kasper Isager, Software Developer</li>
+      <li>Angela P. Ricci, Web Designer/ Front dev</li>
+      <li>Matt Jiggins, Developer/Designer</li>
+      <li>Stefan Wajda, LepszyWeb.pl, digital accessibility specialist</li>
+      <li>Sina Bahram, President, Prime Access Consulting, Inc.</li>
+      <li>Kristina England, Accessibility Specialist, University of Massachusetts President's Office</li>
+      <li>Birkir Gunnarsson, CPWA, digital accessibility lead</li>
+      <li>Kerstin Probiesch, Accessibility Consultant</li>
+      <li>Radek Pavlíček, CPWA, Accessibility Specialist, Teiresias Centre Masaryk University &amp; Poslepu.cz</li>
+      <li>Billy Gregory, TPGi</li>
+      <li>Brian Elton, Accessibility Engineer/Consultant</li>
+      <li>Kevin Mar-Molinero, Director of Experience Technologies Kin+Carta Connect, Member of BIMA Inclusive Design
+        Council.
+      </li>
+      <li>Crystal Preston-Watson, Quality and Accessibility Engineer</li>
+      <li>Bob Dodd, Accessibility Consultant</li>
+      <li>Chauncey McAskill</li>
+      <li>David Swallow, Accessibility Engineer</li>
+      <li>Marko Milanović, Developer, Tenon.io</li>
+      <li>Joe Lamyman, Development Specialist</li>
+      <li>Kevin Ackley, Accessibility Tech Consultant</li>
+      <li>Stephen Clower, Software Developer and Accessibility Lead, Desmos, Inc.</li>
+      <li>Nicolas Chardon, Digital Accessibility Expert</li>
+      <li>Steve Faulkner, Chief Accessibility Officer, TPGi</li>
+      <li>Andy Bell, Designer and Educator</li>
+      <li>Patrick H. Lauke, Accessibility Trash Panda</li>
+      <li>Yann Kozon, Front End Web Developer and Accessibility Consultant, Freelance</li>
+      <li>Chris Taylor, Web Nerd, Yorkshire Twist</li>
+      <li>Miriam Suzanne, Agency Co-Founder &amp; W3C Invited Expert</li>
+      <li>Robert Jolly, Product Manager &amp; Accessibility Strategist</li>
+      <li>Lena Chandelier, Accessibility Expert, Front-end Developer</li>
+      <li>Thomas Parisot, Old Timey Web Developer</li>
+      <li>Jesse Menn, Principal Web Developer</li>
+      <li>Wendy Reid, Accessibility Lead</li>
+      <li>Scott O'Hara, Accessibility Engineer/Consultant</li>
+      <li>Phil Springall</li>
+      <li>Dr Carl Myhill, Director, User Experience Design Limited</li>
+      <li>Sumner M. Davenport, Specialist Web Accessibility</li>
+      <li>Dana Byerly, Interaction Designer</li>
+      <li>Jamie Knight, self</li>
+      <li>Matt Richardson, Web Accessibility Expert</li>
+      <li>Josephine Schwebler, Senior Consultant Accessibility / Accessible Documents</li>
+      <li>Vegard Haugstvedt, Front-end Developer / Accessibility Specialist, Webstep</li>
+      <li>Mikołaj Rotnicki, http://a11y.report, accessibility specialist</li>
+      <li>William Bunch - Accessibility Consultant</li>
+      <li>Kris Rivenburgh, Chief Accessibility &amp; Legal Officer, Essential Accessibility</li>
+      <li>Paul Kruczynski, Front-End UX/UI Developer</li>
+      <li>Matthias Weston, Accessibility-Centered Freelance Developer</li>
+      <li>Mat Harris, Web Accessibility Lead, ITHAKA</li>
+      <li>Lindsey Dragun, Developer / Accessibility Advocate</li>
+      <li>Michail Yasonik, Senior Software Engineer</li>
+      <li>Marcy Sutton, Independent Web Developer and Accessibility Specialist</li>
+      <li>Talita Pagani, Accessibility and UX Consultant, Research Scientist in Web Accessibility for Neurodiversity
+      </li>
+      <li>Aaron Chu, UI Engineer + Disability &amp; Design Researcher</li>
+      <li>Adam Saucier, Web Accessibility Specialist</li>
+      <li>Arnaud Delafosse, Web Quality &amp; Accessibility Consultant, Temesis</li>
+      <li>J.J. Meddaugh, Owner, A. T. Guys.</li>
+      <li>Nicki Rios, CPWA, Founder, Accessibility Consultant &amp; Engineer, Nock &amp; Sparrow</li>
+      <li>John E Brandt, head dude, jebswebs</li>
+      <li>Heather Gray, Website Developer</li>
+      <li>Santina Croniser, Senior Accessibility Engineer, VMware</li>
+      <li>Stein Erik Skotkjerra, Accessibility consultant, CEO, Inklusio</li>
+      <li>Bruno Pulis, Accessibility Advocate, Creator of Awesome A11y</li>
+      <li>Brittany Roots, Accessibility Consultant</li>
+      <li>James Nurthen, Accessibility Engineer &amp; co-chair ARIA Working Group</li>
+      <li>Shell Little, Inclusive Design Lead and Digital Accessibility Specialist</li>
+      <li>Carlos Eriksson, Accessibility Lead, Studio 24</li>
+      <li>Steven Mouret, Digital Accessibility Expert</li>
+      <li>Adam Page, UX Designer</li>
+      <li>David A. Kennedy, Designer and Accessibility Weekly curator</li>
+      <li>Marc Solomon, self</li>
+      <li>Ron Stauffer, Founder, Lieder Digital</li>
+      <li>Nick Caskey, CPWA &amp; Senior Accessibility Engineer, VMware Inc.</li>
+      <li>Devon Persing, Technical Program Manager and Digital Accessibility Specialist</li>
+      <li>Brian Olore, Developer</li>
+      <li>Kathleen McMahon, Engineer, Designer, and Speaker</li>
+      <li>Will Slone, Accessibility Engineer</li>
+      <li>Peter Weil, Web Developer</li>
+      <li>Brennan Young, Accessibility specialist, Laerdal Medical</li>
+      <li>Emanuela Gorla, Accessibility Specialist, TetraLogical</li>
+      <li>Paweł Choiński, Front-End Developer</li>
+      <li>Eric Hind, Accessibility Specialist</li>
+      <li>Sylvie Duchateau, Web Accessibility Consultant, Access42</li>
+      <li>Rachel Cherry, Accessibility Specialist, Director of WPCampus, and Director of Technology and Design, Equal
+        Made
+      </li>
+      <li>Lucy Greco, Accessaces</li>
+      <li>John Lukosky, Accessibility Specialist</li>
+      <li>Jennifer Grant, Senior Accessibility Engineer, Educational Testing Service</li>
+      <li>Károly Szántai, WAS</li>
+      <li>Sarah E. Lynch, Accessibility Engineer</li>
+      <li>L. Jeffrey Zeldman</li>
+      <li>Paul Shryock, WordPress Engineer, NBA</li>
+      <li>Nick Colley</li>
+      <li>Carlin Scuderi, Front End Developer</li>
+      <li>Nicolas Zerr, Digital Accessibility Expert</li>
+      <li>Derek Featherstone, Accessibility and Inclusive Design Professional</li>
+      <li>Corey Megown, Front-End Developer</li>
+      <li>Marcelo Sales, Accessibility Specialist, RD (Raia Drogasil)</li>
+      <li>Scott Vinkle, Accessibility Specialist, Shopify</li>
+      <li>Barry Pollard, Developer</li>
+      <li>Anand Chowdhary, Creative Technologist &amp; Entrepreneur</li>
+      <li>Christian Alden Jacobs, UX Strategist</li>
+      <li>Edward Pritchard, Digital Accessibility Consultant</li>
+      <li>Hadley Luker, Accessibility Analyst, Level Access</li>
+      <li>John Foliot (JF), Independent Accessibility Specialist / W3C Contributor</li>
+      <li>Cullan Bonilla, Accessibility Specialist</li>
+      <li>EJ Mason, Accessibility Specialist</li>
+      <li>Michele Williams, Accessibility and UX Consultant</li>
+      <li>Hala Anwar, Inclusive Design Consultant</li>
+      <li>Johnny Taylor, Accessibility Advocate</li>
+      <li>Joel McKinnon, Accessibility Specialist</li>
+      <li>Olivier Nourry, General Manager & CAO, Be Player One</li>
+      <li>Ross Mullen, Director, CANAXESS</li>
+      <li>Steve Woodson, Developer</li>
+      <li>Joe Yang, Senior UX Designer – Accessibility, ServiceNow</li>
+      <li>Lee Bartholomew, Website Designer</li>
+      <li>Amanda J. Rush, Self</li>
+      <li>John H. Carson Jr., retired escalations specialist, Freedom Scientific</li>
+      <li>Ka Li, Accessibility Consultant</li>
+      <li>Adele M. Beeby, Web Manager, Leicester City Council</li>
+      <li>James Scholes, Director of Digital Accessibility, Prime Access Consulting, Inc.</li>
+      <li>Ian Kersey, Self</li>
+      <li>Wally Zielinski, WAS, Dell Technologies</li>
+      <li>Martin Mengele, Front End Developer & Accessibilty Consultant, @accessabilly)</li>
+      <li>Gaël Poupard, Lead dev, OnePoint</li>
+      <li>Philip Kiff, D4K Communications</li>
+      <li>Tim Kraut, Senior Frontend Developer, AWESOME! Software GmbH</li>
+      <li>Jennifer Panighetti, Web Developer</li>
+      <li>Jasmine Kaul, Founder and Digital Content Consultant, Happy Words</li>
+      <li>Ian Hamilton, accessibility specialist</li>
+      <li>Margie Chubin, Software Engineer</li>
+      <li>Joe Lanman, Designer</li>
+      <li>Jude Robinson, Global Head of Frontend Development, Springer Nature</li>
+      <li>Luc Poupard, Front-end designer and WordPress developer, Proton Technologies</li>
+      <li>David Sloan, UX Research Lead, TPGi</li>
+      <li>Grady Thompson, Student, University of Washington</li>
+      <li>Claudio Luis Vera, Accessibility leader, analyst, and public speaker</li>
+      <li>Emmanuelle Gutiérrez y Restrepo, Fundación Sidar - Acceso Universal</li>
+      <li>Homer Gaines, UI Engineer, and Accessibility Specialist</li>
+      <li>Carolina Aguilera, Accessibility Consultant, Chile</li>
+      <li>Kara Franco, CPWA, Accessibility Engineer</li>
+      <li>Sarah Higley, Accessibility Specialist & Software Developer, Microsoft</li>
+      <li>Benoît Dequick, Front-end dev & RGAA expert</li>
+      <li>Peter Bossley, self</li>
+      <li>Jennifer Gorfine, UX Engineer & Web Accessibility Specialist</li>
+      <li>Heather Migliorisi, Web Accessibility Specialist</li>
+      <li>Thinh-Lay Wonesky, Accessibility Consultant, Allerlay Wonesky Media</li>
+      <li>Robert Kingett, Blind author</li>
+      <li>Frances Jurek, Software Engineer</li>
+      <li>Owen Edwards, Principal Accessibility Consultant, Level Access</li>
+      <li>Jennifer X Zhang, Director of Accessibility Program and Innovation, RaLytics</li>
+      <li>Michael Vaughn, Accessibility Manager</li>
+      <li>Desiree White</li>
+      <li>Marco Salsiccia, Senior Native Mobile Accessibility Coach, Deque Systems</li>
+      <li>Carter Temm, Accessibility Consultant</li>
+      <li>Silvia Ceria, Interior Designer and Content Creator, DforDesign</li>
+      <li>Maurizio Lepora, Full-Stack Developer, Lemaur</li>
+      <li>Jared Clayton, Digital Accessibility Specialist</li>
+      <li>Dirk Ginader, UX Engineer, Google</li>
+      <li>Cordelia McGee-Tubb, Accessibility Engineer</li>
+      <li>Ethan Marcotte, web designer, author of &quot;Responsive Web Design&quot;</li>
+      <li>Jory Cunningham, Accessibility Engineer</li>
+      <li>Lee White, Front-End &amp; Accessibility Engineer</li>
+      <li>Richard Boardman, Senior Director, Product Accessibility</li>
+      <li>David Peter, Software Engineer</li>
+      <li>Stefan Judis, Web Developer</li>
+      <li>Dean Birkett, Accessibility Consultant</li>
+      <li>Myles Lewando, Web Developer & Accessibility Specialist</li>
+      <li>Michael Dowden, CEO, Andromeda Galactic Solutions, author of &quot;Approachable Accessibility&quot;</li>
+      <li>Abdullah Norozi Iranzad, Web Developer</li>
+      <li>Allison Ravenhall, Accessibility Consultant</li>
+      <li>Ian Pouncey, Director, TetraLogical</li>
+      <li>Chancey Fleet, Technology Educator</li>
+      <li>Amanda Mace General Manager, Web Key IT</li>
+      <li>Wendy Torres, Senior Instructional Technologist</li>
+      <li>Janos Sitar, Web Accessibility Specialist, Central 1 Credit Union</li>
+      <li>Dave Bahr, CEO of In-Sightful Living</li>
+      <li>Momin Pasha Mohammed, CPWA, Accessibility Consultant</li>
+      <li>Holly Scott-Gardner, usability assessor and disability rights advocate</li>
+      <li>Sara Cousins, Mighty Spark Design</li>
+      <li>Roger Fracé, Quality Assurance Specialist</li>
+      <li>Pierre Albert, Accessibility consultant, Temesis</li>
+      <li>Colleen Gratzer, Creative Boost and Gratzer Graphics LLC</li>
+      <li>Kara Goldfinch</li>
+      <li>Sally Thoun, Accessibility Consultant</li>
+      <li>Ajaz Mohammed, Accessibility Test Consultant, HCL Canada Inc.</li>
+      <li>Vincent Martin, Usercessible, LLC.</li>
+      <li>Jessie Lorenz</li>
+      <li>Amy Mason, Access Technology Specialist, San Francisco Lighthouse for the Blind</li>
+      <li>Nadia Rasul, CPACC, Front-end Developer and Accessibility Lead</li>
+      <li>Catherine M. Stager, Accessibility and Assistive Technology Specialist, Front Range Community College</li>
+      <li>Avi Advani, Web Accessibility Specialist, California Community Colleges Accessibility Center</li>
+      <li>Wink Harner Professor of Adaptive Technology In Higher Education/CUNY graduate school</li>
+      <li>Courtney Heitman, Technical Accessibility Specialist</li>
+      <li>Simon Bonaventure, Accessibility consultant, Empreinte Digitale</li>
+      <li>Eric Wright</li>
+      <li>Deborah Kaplan, Accessibility Lead, Suberic Networks</li>
+      <li>Carie Fisher, Sr. Accessibility consultant, Deque</li>
+      <li>Scott Boren, Accessibility manager</li>
+      <li>Josie Davidson, Associate Accessibility Specialist</li>
+      <li>Matt Campbell, Chief Technology Officer, Pneuma Solutions</li>
+      <li>Quentin Bellanger, Front-end developer, /tmp</li>
+      <li>Al Romano, Web Developer, Virtually(Creative)</li>
+      <li>Derek Riemer, Frontend web application Developer, NVDA screen reader contributor</li>
+      <li>Isabel Del Castillo, Digital Accessibility Consultant, Prime Access Consulting, Inc.</li>
+      <li>Nic Chan, Front-End Developer</li>
+      <li>Jeremy Neander, Senior Front End Engineer</li>
+      <li>Nick Croft, Senior Full Stack Web Developer, WAS, CPACC, CPWA, 508 TT</li>
+      <li>Dag Eikesdal, web developer & accessibility specialist</li>
+      <li>Dylan M. Rafaty, Disability Rights Activist and Head of Accessibility Strategy & Partnerships at C-Hear,
+        Inc.
+      </li>
+      <li>Randi Strunk, self</li>
+      <li>Jörg Morsbach, anatom5</li>
+      <li>Thomas Logan, Founder and CEO, Equal Entry</li>
+      <li>Lindsay Reddick, self</li>
+      <li>Mike Calvo, self</li>
+      <li>Molly E. Holzschlag, Web Educator and Historian</li>
+      <li>Armony Altinier, CEO & Accessibility Lead, Koena</li>
+      <li>Olivier Camon, Web developer</li>
+      <li>Liz Hare, PhD, Quantitative Geneticist, Dog Genetics LLC</li>
+      <li>Luce Carević, Accessibility expert, Access42</li>
+      <li>Roman Mkrtchian, Web developer, Koena</li>
+      <li>Tori Clark, Accessibility Evangelist and Executive Director, Digital A11ies</li>
+      <li>Sarah Jagrowski, Associate Product Designer, FiscalNote
+      <li>Jay Miles, Product Designer</li>
+      <li>Benjamin Michoux, Front-end Engineer</li>
+      <li>Daman Wandke, CEO/Founder, Wandke Consulting</li>
+      <li>Christian Vogler, Professor and Director, Technology Access Program, Gallaudet University</li>
+      <li>Kevin Erickson, Accessibility Services Manager, Ablr</li>
+      <li>Sanjay Nasta, CEO, Microassist</li>
+      <li>Sue Brettell, Branding & UX Designer</li>
+      <li>Steve Decker, self</li>
+      <li>Fady Rizk, self</li>
+      <li>Philip Fortier, Director, Perficient</li>
+      <li>Natalie Stroud, self</li>
+      <li>Kalib Watson, Accessibility Engineer II, Jackson</li>
+      <li>Ryan Dudek, Software Engineer</li>
+      <li>Jenia Walker, Microsoft</li>
+      <li>Merrie McGaw, Microsoft</li>
+      <li>Nir Baligar, Accessibility Engineering Lead, Microsoft</li>
+      <li>Rob Gallo, Microsoft</li>
+      <li>Maxime Preaux, Frontend Developer</li>
+      <li>Mike Schwartz, Component Library Developer/Accessibility SME</li>
+      <li>Eilana Benish, authorized Accessibility consultant from Israel</li>
+      <li>Mohammad Suliman, blind master's degree computer science student, Tel Aviv University</li>
+      <li>Shawn Hooper, Director of IT, Actionable.co</li>
+      <li>Jim Allan, Accessibility Coordinator</li>
+      <li>Trevor Attenberg, Access technology specialist, Portland community college</li>
+      <li>Sandy Feldman, Self</li>
+      <li>Geof Collis, Accessibility Advocate</li>
+      <li>Martin Courcelles, Martin Assist Inc.</li>
+      <li>Cynthia Bennett, Accessibility Researcher, Carnegie Mellon University</li>
+      <li>Gayle Vivona, UW Writer, consultant, designIMPACT</li>
+      <li>David Best, Accessibility IT Specialist and Advocate</li>
+      <li>Alice Packard, Self</li>
+      <li>Shawn Welker, Access Technology Apprentice, MABVI</li>
+      <li>Soheil Varamini, CPWA, Accessibility Analyst, Microassist</li>
+      <li>Marvin Hunkin, self</li>
+      <li>Alison Walden, Accessibility Specialist, Sapient</li>
+      <li>Geetha Somasundaram, Self</li>
+      <li>Jon Plummer, Director of User Experience, Concentric Sky</li>
+      <li>Jason Neel, Senior Web Developer, West Virginia University</li>
+      <li>Angela Hooker, self</li>
+      <li>Tommy Feldt, CPWA, Accessibility consultant, Useit</li>
+      <li>Ida Franceen, Developer</li>
+      <li>Jean-Claude Simpson, Front-end developer, Mangoweb</li>
+      <li>Holly Schroeder, UX Researcher and Writer, a11y</li>
+      <li>Roel Van Gils, WAS, Co-founder Eleven Ways</li>
+      <li>Sara Soueidan, independent Web UI and design systems engineer</li>
+      <li>Clive Loseby, Owner, Access by Design</li>
+      <li>Afnizar Nur Ghifari, Product Designer</li>
+      <li>Laura Bentz, CPACC, User Experience Interaction Designer, a well-known Fortune 500 banking institution</li>
+      <li>Sarah Pulis, Director Accessibility Services, Intopia</li>
+      <li>Adem Cifcioglu, Director Accessible Technologies, Intopia</li>
+      <li>Stewart Hay, Managing Director, Intopia</li>
+      <li>Chris Pycroft, Digital Accessibility Consultant, Intopia</li>
+      <li>Julie Grundy, Digital Accessibility Consultant, Intopia</li>
+      <li>Robin Whittleton, Engineering Manager</li>
+      <li>Justin Wong, Full-Stack Developer, Project COSMIC Limited</li>
+      <li>Jana Uhrich, Costco Wholesale</li>
+      <li>Will Buckingham, Senior Front-End Engineer / Lead Accessibility Engineer, Prescriptive Data</li>
+      <li>Doug Hayman, Accessibility Specialist & Trusted Tester</li>
+      <li>Jules Ernst, Digital Accessibility Consultant, 200 OK</li>
+      <li>Cory Joseph, self</li>
+      <li>Amanda Ryan, Academic Technologist</li>
+      <li>Sébastien Delorme, CEO, Ideance</li>
+      <li>Nicolas Hoffmann, Senior Front-End developer / Accessibility advocate</li>
+      <li>Yvain Liechti, Design System Engineer, UKG</li>
+      <li>Sébastien Picq, Senior Front-End Engineer / Accessibility consultant</li>
+      <li>Robin Massart, Policy Assistant on the Web Accessibility Directive, European Commission</li>
+      <li>Chris M Law, Consultant, Accessibility Track</li>
+      <li>Ray Schwartz, Accessibility Consultant, InRhythm</li>
+      <li>Guy Hickling, Freelance Accessibility Consultant</li>
+      <li>Mario Vasquez, UX Designer</li>
+      <li>Jérémy Renard, webdesigner / front-end developer</li>
+      <li>Jan Pettersson, UI developer</li>
+      <li>Jan Maarten CPWA, Senior Accessibility Designer, GitHub</li>
+      <li>Benjamin de Oostfrees, Front-end web developer</li>
+      <li>Zhiyang Ong, Ph.D. student, Texas A&M University</li>
+      <li>Caroline Desrosiers, Founder & CEO of Scribely</li>
+      <li>Anthony LADEUIL, Consultant Accessibilité, Clever Age</li>
+      <li>Danielle Sheffler, Accessibility Consultant</li>
+      <li>George McKinlay Accessibility Consultant</li>
+      <li>Jean-Baptiste Audras, WordPress Core team representative, former WordPress Accessibility team representative, Whodunit Agency head of technology, France</li>
+      <li>Aaron Jorbin, Product and Engineering Leader</li>
+      <li>Ethan Holliger, Accessibility Engineer</li>
+      <li>Mike Vogel, Accessibility Consultant / UX Engineer</li>
+      <li>Karli Yeoman, Accessibility Engineer, Expedia Group</li>
+      <li>Carmen Matthews, Accessibility Specialist</li>
+      <li>Kalani Helekunihi, Disabled Scientist</li>
+      <li>Mark Boyden, IT Consultant, Web Developer, FOSS Contributor</li>
+      <li>Andy Marino, Lead Developer, Unity Web Agency</li>
+      <li>Alisa Herr, CEO, Unity Web Agency</li>
+      <li>Jacqueline Pugliese, Accessibility Consultant</li>
+      <li>Maurício Pereiro, Quality Assurance Analyst in Digital Accessibility</li>
+      <li>Dr. Keith Newton. Technical Program Manager -  Accessibility, eBay</li>
+      <li>Franck Letrouvé, CEO, pixFL</li>
+      <li>Tema Smith-Bosken, Senior A11y SME and Digital Marketing Senior Advisor Cigna</li>
+      <li>Attila Bodnár, Web Developer, Accessibility Engineer</li>
+      <li>Richard Thiel, Frontend Engineer &amp; Accessibility Advocate, real.digital</li>
+      <li>Stefan Farnetani, Digital Accessibility Specialist & CEO, mindscreen</li>
+      <li>Lukáš Hosnedl, freelance translator, dev and accessibility consultant</li>
+      <li>Frank Reding, Development Manager &amp; Accessibility Advocate, Shopify</li>
+      <li>Michael Telgkamp, Digital Accessibility Specialist & Developer, mindscreen</li>
+      <li>Ginger Claassen, accessibility engineer / consultant</li>
+      <li>Duff Johnson CEO, PDF Association</li>
+      <li>Steve Green Managing Director Test Partners Ltd</li>
+      <li>Jennifer Grenier, Software Engineer</li>
+      <li>Okuto Oyama, Front-end Designer &amp; Accessibility Advocate, Internet Watcher</li>
+      <li>Quin Marilyn, programmer and accessibility advocate.</li>
+      <li>Peter Quale, Lead Accessibility Consultant, Target Corp.</li>
+      <li>Carlos Moreno, Software Engineer &amp; Accessibility Advocate, Outsmartly</li>
+      <li>Peter Heery, Accessibility Scotland</li>
+      <li>Dirk Neyhart</li>
+      <li>Lindsay Yazzolino, nonvisual accessibility designer, CVS Health</li>
+      <li>Marc Haunschild, Accessibility Consultant, Author and Teacher</li>
+      <li>David Murdoch, Principal Accessibility Consultant, Test Partners Ltd</li>
+      <li>Tim Frick, President, Mightybytes</li>
+      <li>Kathy Cahill, Associate Dean, Accessibility and Usability, MIT</li>
+      <li>Greg McNeil, President/CEO, 216digital</li>
+      <li>Bobby Graczyk, Accessibility Specialist, 216digital</li>
+      <li>Joseph S. Levin, Portal Design</li>
+      <li>Matthieu Marseille, Senior Front End Engineer and RGAA certified accessibility expert, ekino</li>
+      <li>Asaf Kuller, Websites accessibility consultant, Kull-Air Studio, Israel</li>
+      <li>Wilmer Rodriguez Vega, Digital Accessibility Consultant</li>
+      <li>David Dias, Front-End UX/UI Developer & Accessibility Advocate, Kijiji</li>
+      <li>Kathleen Burkhardt, self</li>
+      <li>Koen Cornelis, Web Accessibility Specialist, Belgium</li>
+      <li>Sophie Ragas, Web Accessibility Consultant</li>
+      <li>Holger Dieterich, Chairman Wheelmap.org, Co-Founder Sozialhelden e.V.</li>
+      <li>Sebbe Isaac Kurian, UX Designer</li>
+      <li>Mike Gifford, CivicActions</li>
+      <li>Jennifer Shepherd, web accessibility specialist</li>
+      <li>Matthew Shaw, Managing Partner, Disability Solutions</li>
+      <li>Rodrigo Sanchez, Senior Accessibility Specialist Square Enix West</li>
+      <li>Amber DeRosa, Accessibility Lead</li>
+      <li>Paweł Prot, UX and accessibility specialist</li>
+      <li>Clément Fresneau, accessibility consultant for Empreinte Digitale</li>
+      <li>Joe Ortenzi, Lead Experience Designer, Australian Digital Health Agency</li>
+      <li>Darren Bates, Global Accessibility and Inclusion Strategist, Darren Bates, LLC</li>
+			<li>Claire Webber, Digital Accessibility Consultant, Intopia</li>
+			<li>May-Fei Lee, Digital Accessibility Consultant, Intopia</li>
+			<li>Jeff Smith, Senior Digital Accessibility Consultant, Intopia</li>
+			<li>Neil Jarvis, Business Development, Intopia</li>
+			<li>Zoe Haughton, Digital Accessibility Consultant, Intopia</li>
+			<li>Andrew Arch, Principal Consultant, Intopia</li>
+      <li>Sandyara Peres, Accessibility Program Manager Lead, PicPay</li>
+      <li>Jeff Coburn, Web Services Manager, Institute for Community Inclusion</li>
+      <li>Nicolas Dorigny, Senior Front End Developper and accessibility enthousiast, Dataetic</li>
+      <li>Stephane Deschamps, Accessibility specialist and coordinator</li>
+      <li>Anuradha Kumari, Accessibility Advocate</li>
+      <li>Juanjo Montiel, independent accessibility consultant</li>
+      <li>Roberto Scano - ICT Accessibility Expert</li>
+      <li>Alistair Shepherd, Front End Developer and Accessibility Advocate</li>
+      <li>Jens Oliver Meiert, engineering manager and author, former WCAG working group member</li>
+      <li>Nikhil Vytla, Software Engineer &amp; A11y Advocate, AWS</li>
+      <li>Hector Osborne Rodriguez, Front End Development Manager & Accessiblity Lead, Accenture</li>
+      <li>Fredrik Fischer, CWAE, Accessibility Consultant and Project Officer at Hilfsgemeinschaft der Blinden und Sehschwachen Österreichs.</li>
+      <li>Benjy Stanton - Interaction designer</li>
+      <li>Robert Precious - Lead Accessibility Specialist, THG</li>
+      <li>Dean Holden, Accessibility Engineer</li>
+      <li>Donna Lettow, Digital Accessibility Specialist</li>
+      <li>Ronise Nepomuceno, Accessibility Manager, BT Consumer Digital</li>
+      <li>Andrew Nordlund, Web Accessibility Specialist</li>
+      <li>Émilie Viau, accessibility consultant and front-end developer</li>
+      <li>Julianna Rowsell, Senior Inclusive Designer and Accessibility Advocate, Shared Services Canada</li>
+      <li>Erin Lucas, Senior Director of Digital Accessibility, RedShelf</li>
+      <li>Dominic Mazzoni, Software Engineer - Chrome Accessibility, Google</li>
+      <li>Josh Kim, WAS, Senior Designer and Accessibility Specialist - Ad Hoc</li>
+      <li>Goly Rabbanim, Authorized accessibilty service consultant & head of digital inclusion at The Open University of Israel</li>
+      <li>Lauren Race, Accessibility Researcher, New York University; Accessibility Product Designer, Twitter</li>
+      <li>Matt Northam, Senior Front End Developer and Accessibility Advocate, Pulselive</li>
+      <li>Jayme Johnson, Accessibility Consultant and Trainer</li>
+      <li>Daniel O'Mahony, Accessibility Engineer</li>
+      <li>Ryan Magoon, Principal Front End Engineer, Advance Auto Parts</li>
+      <li>Shane Popplestone, Accessibility tester.</li>
+      <li>Tyler Rodick, student of cloud computing, Western Governors University</li>
+      <li>Deborah Edwards-Oñoro, web designer and accessibility advocate</li>
+      <li>Patrick Andrade, Assistive Technologist at The Chicago Lighthouse and Accessibility Advocate</li>
+      <li>Soren Hamby, Senior Manager of UX and Digital Design at Benjamin Moore</li>
+      <li>Nathan Weber, Self</li>
+      <li>Char James-Tanny, Accessibility Advocate</li>
+      <li>Werner Rosenberger, MSc, CWAE, Certified WebAccessibility Expert, Projektleitung WACA - Web Accessibility Certificate Austria</li>
+      <li>Riley MacIsaac, Quadriam, Design and Development Lead and Accessibility Specialist</li>
+      <li>Marco Zehe, formerly of Freedom Scientific, Mozilla, NVDA and open web contributor, accessibility veteran</li>
+      <li>Benoit Kogut, senior frontend dev</li>
+      <li>Rupa Devi, Staff Product Design, Accessibility Specialist at Freshworks Tech</li>
+      <li>Ugurcan (Ugi) Kutluoglu, Accessibility Lead, Carbon Health</li>
+      <li>Romain Menke, Developer, Mr. Henry</li>
+      <li>Michael Fienen, Senior Web Developer, founder of The Drunken UX Podcast</li>
+      <li>Ady Stokes, A11y_Ady</li>
+      <li>Michael Zapata, Accessibility Coordinator</li>
+      <li>Mark McCarthy, MSIM, CPWA, Sr. Accessibility Engineer, University of Illinois</li>
+      <li>Gareth Crossan, Digital Accessibility Engineer, Ireland</li>
+      <li>Chris Smart, CPACC</li>
+      <li>Charles Roper, Digital Development Manager</li>
+      <li>Eeva-Jonna Panula, CPWA, Front End Developer, Accessibility Specialist</li>
+      <li>Bet Hannon, CEO AccessiCart</li>
+      <li>Meg Miller, Lead Developer & Accessibility Specialist for AccessiCart</li>
+      <li>Michael Honey-Arcement, DevOps Engineer, Channel-Fusion</li>
+      <li>Tobias Christian Jensen, Digital Accessibility Specialist</li>
+      <li>Jeffrey H.S. Knaack, Digital Product Manager & Solutions Architect, NYS Digital Services</li>
+      <li>Samm Delorey, Web Accessibility Specialist, University of Massachusetts Amherst</li>
+      <li>Chris Yoong, Frontend Developer, Government Digital Service</li>
+      <li>Lizzie Bruce, Content strategist specialising in readability, Cake Consultancy Ltd.</li>
+      <li>Wojtek Kutyla, Independent User Experience Consultant and Trainer, Kutyla Design Ltd.</li>
+      <li>Andy Andrews, University of Washington</li>
+      <li>Andreas Jacobsen, CPWA, CEO, Inklud AS</li>
+      <li>Kristian Munter Simonsen, CPWA, accessibility consultant, Inklud AS</li>
+      <li>Jan McSorley, VP of Accessibility, Pearson Assessments</li>
+      <li>Caryn Pagel, Self</li>
+      <li>Rain Breaw Michaels, CPWA, Interaction Designer - Central Accessibility, Google</li>
+      <li>Saptak Sengupta, Inclusive Web Developer</li>
+      <li>Kazuhiko Tsuchiya, web usability and accessibility expert</li>
+      <li>Sacha Bouillez, Frontend Developer and Accessibility Advocate</li>
+      <li>Jacquelyn Parmentier &quot;average blind screen reader user&quot;</li>
+      <li>Markku Hakkinen, Director of Accessibility Standards &amp; Inclusive Technology, ETS</li>
+      <li>HenryGR, Developer and Accessibility Advocate</li>
+      <li>Elle Waters, Adobe</li>
+      <li>Breixo Pastoriza, CPACC, Glocal Quality Solutions.</li>
+      <li>Christopher  Johansen, Anttix, Inc.</li>
+      <li>Keri Svendsen</li>
+      <li>John McNabb, Accessibility Consultant</li>
+      <li>Joe Chidzik, Accessibility Consultant.</li>
+      <li>Omar Bonilla, Accessibility Specialist</li>
+      <li>Chelsea Adelman, Product Designer</li>
+      <li>Ramon Lapenta, Tech Lead, Cyber-Duck Ltd</li>
+      <li>Alissa Bodden, Accessibility Advocate, UI/UX Designer</li>
+      <li>Ala Hamada, Accessibility Analyst</li>
+      <li>Thibaud Colas, Developer, Torchbox</li>
+      <li>Angie Rajani, CPACC, Accessibility Specialist</li>
+      <li>Maurício Carneiro, Accessibility Specialist and Frontend Developer</li>
+      <li>Scott McKee, UX Designer</li>
+      <li>Sergei Kriger, Frontend Developer</li>
+	    <li>Dr Donal Fitzpatrick, Assistant Professor, Dublin City University</li>
+      <li>Rocío Alvarado, Digital Accessibility Specialist</li>
+      <li>Manuel Cheța, Frontend Developer and Web Accessibility Specialist</li>
+      <li>Detlef Girke, BITV-Consult, Accessibility Specialist</li>
+      <li>Kelly Dip, Accessibility Specialist and Instructional Designer</li>
+      <li>National Network for Equitable Library Service (NNELS)</li>
+      <li>Dawn Cooper, cloud platform engineer and accidental accessibility advocate</li>
+      <li>Elie Sloïm, CEO and founder at Opquast</li>
+      <li>Grant Broome, Director, Dig Inclusion</li>
+      <li>Kathy E. Gill, UX consultant and professor</li>
+      <li>Lee Amador, CPWA, WAS, CPACC Accessibility Consultant</li>
+      <li>Jack McElaney, VP, Microassist</li>
+      <li>Kacie Cappello, Access Technology Instructor</li>
+      <li>Livia Gabos, Accessibility Product Owner, Hand Talk</li>
+      <li>Irfan Ali, Principle Accessibility Engineer, ETS, Princeton, NJ</li>
+      <li>Abbey Scofield-Marlowe, self</li>
+      <li>Jason Ruyle, Developer and Web Accessibility Specialist</li>
+      <li>Sarah Russell, Accessibility Tester</li>
+      <li>Russell Hoy, Software Consultant, self</li>
+      <li>Chris LaChance, Pegasystems as Design Ops Lead</li>
+      <li>Grace Snow, Frontend Developer and Accessibility Specialist,</li>
+      <li>Caspian Turner, Director, Accessible by Design</li>
+      <li>Jean-Pierre Gay, Web Accessibility Specialist, Temesis</li>
+      <li>H Robert King, self</li>
+      <li>Matthew Brough, self</li>
+      <li>Eduardo Meza-Etienne, Director of Compliance and Accessibility Team Lead at eSSENTIAL Accessibility</li>
+      <li>Abderrahmen Maïza, web integrator</li>
+      <li>David Libeau, web developer &amp; researcher in web/game/media accessibility</li>
+      <li>Victoria French, Executive Director, Cinecove</li>
+      <li>Steve Rancour, UX Designer and Accessibility Point Person, IKEA US</li>
+      <li>Detlev Fischer, Managing Director of DIAS GmbH, W3C AGWG invited expert</li>
+      <li>Andrew Mallis, CEO, Kalamuna</li>
+      <li>Lee Dale, CEO, Say Yeah!</li>
+      <li>Emrah Dilsizoglu, Head of Sales, Evinced Inc.</li>
+      <li>Joan Concilio, co-owner, Technical Penguins</li>
+      <li>Richard U. Steinberg, individual</li>
+      <li>Kurt Bunge, Senior QE (Accessibility), Appian Corp.</li>
+      <li>Nick Friedman, Director of IT, Adirondack Website Design</li>
+      <li>Jane Wilson - UX Analyst and Accessibility Advocate</li>
+      <li>Angela Brunk, self</li>
+      <li>Andreas Lopez, Digital Project Manager</li>
+      <li>Nathan Loding, Senior Developer at Deque Systems, CPWA</li>
+      <li>Clinton N. Godlesky, Director of Interactive, Chemistry Communications</li>
+      <li>Pete Czech, CEO and Founder, New Possibilities Group, LLC</li>
+      <li>Jeff Rodgers, Accessibility Manager, Accessiblü, LLC</li>
+      <li>James Ryan, Frontend Developer</li>
+      <li>Richie Wilkin, Blind screen reader user</li>
+      <li>Amber Gehrts, Accessibility Program Manager, Hyland</li>
+      <li>Taiysha Hobbs, Accessibility Engineer, Appian </li>
+      <li>Sarah Federman, Frontend Engineer</li>
+      <li>Oliver Emberton, CEO, Silktide</li>
+      <li>Andrew Stevens, Web Applications and Services Librarian, George Mason University</li>
+      <li>Hans Kuijpers, Happy Frontend Developer, HKweb</li>
+      <li>Paul van Buuren, front-end developer, WBVB Rotterdam</li>
+      <li>Daniel Berryhill, Accessibility Tester</li>
+      <li>Falk Rismansanj, zitrotec</li>
+      <li>Marjon Bakker, Firm Ground</li>
+      <li>John Rochford, University of Massachusetts Medical School</li>
+      <li>Geoffrey Crofte, Lead UX Designer and Accessibility Advocate at Foyer Group</li>
+      <li>Terri Fellers, Accessibility Consultant, Equal Entry</li>
+      <li>Felipe Genuino, Front-end designer and Accessibility Specialist at Softplan</li>
+      <li>Maurício Sá, Web Accessibility Specialist at Softplan</li>
+      <li>Mike Zeballos, Accessibility Consultant, Toptal Talent</li>
+      <li>Armen Mnatsian, Digital Accessibility Specialist, digitaalEHBO, EverXS LLC</li>
+      <li>Natalie Collins, Partner, Thinkrum</li>
+      <li>Cher Fitchett, Digital Director, The Branding Firm Inc.</li>
+      <li>Len Beasley, Product Designer, A11y Consultant</li>
+      <li>Marcy Rye, Founder & CEO of Wire Media, LLC</li>
+      <li>Kat Crippen, Accessibility Specialist</li>
+      <li>Gaynor Keane, Product Management Manager, Salesforce</li>
+      <li>Danielli Franquim, CPACC, QA & Accessibility Analyst</li>
+      <li>Daniel Seagull, CPACC, QA & Accessibility Analyst</li>
+      <li>Cara Beasley, Digital Accessibility Advocate</li>
+      <li>José R. Hilera, Professor, University of Alcalá, Spain</li>
+	    <li>Lanie Molinar, Student training as an accessibility tester and software developer, freeCodeCamp</li>
+      <li>Peter Jewett, CPACC, Founder & CEO at Accessible Web</li>
+      <li>Pete Bruhn, CPACC, Director of Digital Accessibility Solutions, Onward Accessibility</li>
+      <li>Nick Romano, CPWA,  Senior Software Engineer at Accessible Web</li>
+      <li>Lauren Layn, CPACC, A11y Success Coordinator at Accessible Web</li>
+      <li>Alaina Birney, CPWA, Lead A11y Specialist at Accessible Web</li>
+      <li>Alex Getty,  CPACC, A11y Specialist at Accessible Web</li>
+      <li>Scott McCracken, CPACC, Software Engineer at Accessible Web</li>
+      <li>Leah Mattern, CPACC, A11y Specialist at Accessible Web</li>
+      <li>Ben Turner, CPACC, A11y Specialist at Accessible Web</li>
+      <li>Nicole Alli, CPACC, Software Engineer at Accessible Web</li>
+      <li>Abigail Scott, CPACC, Sales Representative at Accessible Web</li>
+      <li>Elizabeth Turrubiartes, CPACC, UI/UX Designer at Accessible Web</li>
+      <li>Gianna Barnhart, Sales Representative at Accessible Web</li>
+      <li>Zoltan Hawryluk, CPWA, Accessibility Specialist and Front-End Developer</li>
+      <li>Calum Ryan, Certified Web Accessibility Specialist, dxw</li>
+      <li>Jason Morris, Accessibility Engineer</li>
+      <li>Doc Sheldon, Accessibility Advocate</li>
+      <li>Terri Youngblood Savage, Owner, Accessible Systems Inc</li>
+      <li>Álvaro Domingo Zurdo, Consultant accesibility</li>
+      <li>Steven Medina, Senior Accessibility Analyst, JP Morgan Chase</li>
+      <li>Rémi Parmentier, front-end developer, Tilt Studi</li>
+      <li>James Edwards, TPGi</li>
+      <li>Mike Mai, designer &amp; coder</li>
+      <li>Scott Werley, Frontend Designer/Developer and Accessibility Specialist, self</li>
+      <li>Claire Annan, Consulting Software Engineer, 18F</li>
+      <li>Jefté Macêdo, UX researcher and Accessibility Specialist</li>
+      <li>Jon McLaren, Sr. Developer Advocate, HubSpot</li>
+      <li>Mark Wiemer, software engineer specializing in web accessibility at Microsoft</li>
+      <li>Bart Simons, Web Accessibility Specialist, AnySurfer</li>
+      <li>Julie Baribeau, spécialiste en accessibilité Web & développeuse frontend</li>
+      <li>Michael Parker, Director, Access Ingenuity</li>
+      <li>Kathy Marks. IT Accessibility Coordinator, Arizona State University</li>
+      <li>Áine Kelly-Costello, screen- reader user</li>
+      <li>Jason Tillotson, Accessibility Consultant</li>
+      <li>Isaías Hernández Galeano,  Unila Brazil</li>
+      <li>Gary Byrne, Senior Frontend Developer and Accessibility Advocate</li>
+      <li>John Haselden</li>
+      <li>Boris Schapira, Solution Expert at Contentsquare</li>
+      <li>Chris Burke, Accessibility Consultant, Otaku / Discoverly</li>
+      <li>Natacha Madeuf, Accessibility Expert</li>
+      <li>Jack Sharkey, Staff Web Accessibility Engineer, Red Ventures</li>
+      <li>Katie Foster, Engineering Manager and Accessibility Advocate</li>
+      <li>澤田 望 (Nozomi Sawada), designer</li>
+      <li>Kevin Wallace, Accessibility Consultant, EnvizionLabs</li>
+      <li>Marcus Morba, Consultant Digital Accessibility & Inclusive UX</li>
+      <li>Darin Senneff, UX Designer and Developer</li>
+      <li>Sophie Schuermans, Web Accessibility Specialist, AnySurfer</li>
+      <li>Hasan Arous, Web Developer and Accessibility Consultant, EtaBits</li>
+      <li>Crystal Dionysopoulos, UX Engineer and Founder, Lucid Fox</li>
+      <li>Manager of Web Accessibility Services, Cornell University</li>
+      <li>isral Duke, UI, UX Design Lead — Product Delivery, Louisiana Office of Technology Services</li>
+      <li>Lacy Skrzeczkoski - UX Designer</li>
+      <li>Lonny O'Brien, self</li>
+      <li>Julie Romanowski, Director of Accessibility Services, Knowbility</li>
+      <li>Cathy Schmitt Whitaker, screen reader user</li>
+      <li>John P. Green, Web Developer</li>
+      <li>Jonee Meiser, Accessibility Professional, CPWA</li>
+      <li>Gabriel Lek, Senior Content Designer, Grab</li>
+      <li>Patrick S. Wilson, self</li>
+      <li>Greg Jellin, Digital Accessibility Specialist, The Center for Accessible Technology</li>
+      <li>Suman Damera, Principal accessibility engineer, Phenom</li>
+      <li>Eric Porter, UI Developer, Radancy</li>
+      <li>Cate Seely, Webmaster, It Is Written, Inc</li>
+      <li>Dylan Thomas, Web Accessibility Professional, self</li>
+      <li>Blake Bertuccelli, Equalify</li>
+      <li>Victor Manuel Salgado Gonzalez, Accessibility & Forestry Engineer</li>
+      <li>Brian Moore(CPWA)) Senior Accessibility specialist: TD Bank</li>
+      <li>Michael Mistak, Principal, ofmanyhats.digital</li>
+      <li>Marc Tremblay,  CEO and accessibility consultant, Agence SAT</li>
+      <li>Mo Hieronimus-Dimercurio, User Experience & Accessibility, California Public Employees Retirement System</li>
+      <li>Laura Suyasa, User Experience Designer - enGen</li>
+      <li>Christine Laikind</li>
+      <li>Javed Alam, SME(Digital Accessibility) and Tech Lead, Hurix Digital Technologies</li>
+      <li>Tay Ashton, Accessibility Consultant</li>
+      <li>Israel Gutierrez, Sr. Product Designer</li>
+      <li>Laura Carlson, Self</li>
+      <li>Jaunita George, Esq., CPWA, Self</li>
+      <li>Cristian Díaz, Self</li>
+      <li>Shea Hunter Belsky, Chief Technology Officer, Mentra</li>
+      <li>Jakob Rosin, Accessibility specialist, CPWA, Sparrow Access/Estonian Blind Union</li>
+      <li>Rebecca Mir, CPACC, Senior Director of Digital Product Management</li>
+      <li>Alicia St Rose, Accessibility Advocate, Web Developer and Designer</li>
+      <li>Wolfgang Wiese, Web Management, Friedrich-Alexander-Universität Erlangen-Nürnberg</li>
+      <li>Mark Root-Wiley, Frontend Developer, MRW Web Design</li>
+      <li>Gareth Joyce, User Experience Designer and Accessibility Lead, Valtech</li>
+      <li>Kai Kubasta, Accessibility Manager, Staffbase</li>
+      <li>Aidan Jones, front-end developer and accessibility advocate</li>
+      <li>Aaron Gustafson, Principal Accessibility Innovation Strategist, Microsoft</li>
+      <li>Deneb Pulsipher, Captain Accessible, SeaMonster Studios</li>
+      <li>Charissa Ramirez, Accessibility Specialist</li>
+      <li>Carolyn Chesler, Sr. Software Quality Engineer in Accessibility, BECU, CPAAC</li>
+      <li>Ondřej Pohl, CPWA, UX & Accessibility Lead</li>
+      <li>Jonathan Lancett, Accessibility advocate, OpenWrt A11YTester</li>
+      <li>Ariel Burone, Web developer</li>
+      <li>Jake Abma, Accessibility Lead</li>
+      <li>Jacklyn Agor, Business Development & Digital Strategy, Puppet Master Marketing</li>
+      <li>Tanner Gers, Managing Director, AccessAbilityOfficer</li>
+      <li>Annett Farnetani, Digital Accessibility Specialist & CEO, mindscreen</li>
+      <li>Peter McNally, UX and Accessibility Professional</li>
+      <li>Eugene Smith, Accessibility manager, Enrick Group (Pty) ltd</li>
+      <li>Sarahelizabeth J. Baguhn, Ph.D., CATIS, Western Michigan University</li>
+      <li>Chris Keroack, Senior Accessibility Consultant</li>
+      <li>Miriam Nabinger, Accessibility Trainer and UX Designer, minamalism</li>
+      <li>JoAnn Rautio, Digital Accessibility Coordinator, Minnesota IT Services</li>
+      <li>Marie Destandau, lead front end developer</li>
+      <li>Lee Ohnesorge ThinkTherapy designer and web developer</li>
+      <li>Keith Casebonne, Communications and Database Manager, Disability Rights Florida</li>
+      <li>Misty Kienzynski, Indiana Affiliate State Treasurer, National Federation of the Blind</li>
+      <li>David Gibson, President, Propeller Media Works/ Accessibility.Works</li>
+      <li>Danny Lancaster, Accessibility Lead, Nexer Digital</li>
+      <li>Ainsley Ellis, Disabled Web Developer and Accessibility Specialist</li>
+      <li>Dmytro Vasylenko, CEO, Web compliances</li>
+      <li>Sadia Rodriguez, Bounteous</li>
+      <li>Heather Burns, Sr. Accessibility Consultant, Equal Entry</li>
+      <li>Craig Morrison, Principal Software Engineer, JP Morgan Chase</li>
+      <li>Leigh Mortimer, Lead Product Manager, NHS.UK, NHS England</li>
+      <li>Nicola Mascotto, web designer and front-end developer, Flying Chair</li>
+      <li>KJ Schmidt, Accessibility Specialist and Designer</li>
+      <li>Dustin Snowadzky, Accessibility Consultant</li>
+      <li>Jan Beniamin Kwiek, Accessibility Expert</li>
+      <li>Jessica Justus, Accessibility Consultant</li>
+      <li>Piotr Źrołka, UX and Accessibility Professional, Kinaole</li>
+      <li>Ashley Firth, Global Head of Front-end Development, Octopus Energy</li>
+      <li>Shaun Conner - Accessibility Lead</li>
+      <li>Matthew Roach - Accessibility Engineer</li>
+      <li>Kacper Mikocki - accessibility tester, Accens</li>
+      <li>Luis Garcia - Accessibility Lead</li>
+      <li>Emma Hardman, Sr. Accessibility Program Manager, Splunk</li>
+      <li>Katie Diduch, Freelance Accessibility Web and Print Designer, Accessibility Auditor, and Accessible Document Creator and Remediator, KTdid.</li>
+      <li>Marsha Drenth, Access Technology Instructor & Accessibility Professional</li>
+      <li>Donna Mack, Accessibility Consultant / Owner, Disability Diplomat</li>
+      <li>Antonio Matera, Front End Developer, UX Engineer, Accessibility Specialist</li>
+      <li>Fatih Altınok, self</li>
+      <li>Santi Cros, Frontend Developer & Accessibility Advocate</li>
+      <li>Josh Hetrick, UX Designer, CPACC</li>
+      <li>Katherine Sinclair, UX/UI Designer and Developer, Accessibility Specialist</li>
+      <li>Fabrizio Calderan, front-end developer and accessibility advocate</li>
+      <li>Philip John, senior WordPress engineer</li>
+      <li>Nicholas Pappas, Product Designer, 508 TT, Cribl</li>
+      <li>Michael Gower, Senior Consultant in Accessibility</li>
+      <li>LB Lanning, self</li>
+      <li>Kristijan Lazarev, Accessibility Specialist, Asociation for Assistive Technology &quot;Open the Windows&quot;</li>
+      <li>Stephen Guerra, self</li>
+      <li>Patrick Sturdivant Accessibility Consultant</li>
+      <li>Anna Orlova, digital accessibility specialist, CPWA</li>
+      <li>Ramji Kadayanallur Seetharaman, Accessibility Analyst, Bank of America</li>
+      <li>Jacob Perkins, Section 508 Coordinator, Kentucky Department of Education</li>
+      <li>Marie Le Borgne, Accessibility consultant</li>
+      <li>Anne Lee Steele, Community Manager, The Turing Way</li>
+      <li>Sasirekha Palanisamy, Test Manager and Digital Accessibility Evangelist.</li>
+      <li>Frank Elavsky, Researcher, Carnegie Mellon University.</li>
+      <li>Quintin Balsdon, Android Engineer and Accessibility Specialist</li>
+      <li>Matt Litzinger, Web Accessibility Specialist, Litz Digital</li>
+      <li>Theodor Vararu, Software Engineer</li>
+      <li>Henry Catalini Smith</li>
+      <li>Daniel Haukenes Miller, Web Developer</li>
+      <li>Alejandro Suárez Domínguez, Web Developer and accessibility consultant, TothomWeb</li>
+      <li>Maximilian Frühschütz, Web Developer</li>
+      <li>Jason Day, Accessibility Consultant</li>
+      <li>Maiya Holliday, CEO, Mangrove Web</li>
+      <li>Jorge Gascón, Web Accessibility Coordinator, Miguel Hernández University of Elche (Spain)</li>
+      <li>Stacey Lumley, Freelance Web Developer and Accessibility Specialist</li>
+      <li>Julian Kittelson-Aldred, accessibility consultant</li>
+      <li>Alex Gowan-Webster, Head of Technology - Cog Design</li>
+      <li>Joyce Zhu, Accessibility Engineer, GitHub</li>
+      <li>Henny Swan, Director, TetraLogical</li>
+      <li>Aarinn Linson, Accessibility Consultant</li>
+      <li>Carlos Duarte, Associate Professor, University of Lisbon</li>
+      <li>Andrew Somers, Director of Research, Inclusive Reading Technologies, Inc., a California Non-Profit</li>
+      <li>Charles F. Munat Craft Coder - Architect - Universal Designer, Paperhat, Ltd.</li>
+      <li>Yi-Jen (Lucy) Hsu, Digital Accessibility Specialist</li>
+      <li>Oona Mayo, self</li>
+      <li>Greg Alchin, Inclusive Design and Accessibility Specialist, ALL EQUAL</li>
+      <li>Gessica Romie Cabral, Analista de Teste, Keeggo Technologies </li>
+      <li>Andrew Boardman, Creative Director and Accessibility Lead, Mangrove Web</li>
+      <li>Darrell Hilliker, Accessibility Support Engineer, Salesforce</li>
+      <li>David Read, CPACC</li>
+      <li>Erin Mastrantonio, COO & Accessibility Director, Elevation Web</li>
+      <li>Clark Gunn, Front-end Developer and Accessibility Specialist</li>
+      <li>Bram Janssens, Web Accessibility Specialist, AnySurfer</li>
+      <li>Joan Pahisa, Accessibility Consultant and Trainer</li>
+      <li>Jiří Zmrhal, CPWA</li>
+      <li>Nick Bromley, Director, Red Kite Digital Accessibility Ltd</li>
+      <li>Tobias Guggenmos, Ulm University</li>
+      <li>Serena Guidotti, Accessibility Specialist, NTT Data Italia</li>
+      <li>Aimee Cozza, Developer</li>
+      <li>Scott Nguyen, UX Designer</li>
+      <li>Katharina Haake, CEO distriko GmbH & Co. KG</li>
+      <li>Oliver Haake-Klink, CPACC, CEO distriko GmbH & Co. KG</li>
+      <li>Martin Maugeais, CPWA, Web Developer</li>
+      <li>Bianca Zanardi, Web Developer and Accessibility Specialist</li>
+      <li>Alex Stine, Accessibility Consultant and DevOps Engineer</li>
+      <li>Charles Bauer, UX Designer</li>
+      <li>Tzviya Siegman, Technical Governance Leader</li>
+      <li>Adrian Wegener, Accessibility Researcher, Karlsruhe Institute of Technology</li>
+      <li>Oliver Vaupel, WAS, ovau design studio</li>
+      <li>Meg Harding, CPACC – digital accessibility specialist</li>
+      <li>Syed Talha Mustafa, Website Accessibility Expert (ADA and Section 508)</li>
+      <li>Kurt Deutscher, Founder and Principal Consultant, NetRaising</li>
+      <li>Jackelyn Kjerstie Hayduk, Senior Experience Engineer & Certified Web Accessibility Specialist. Hero Digital</li>
+      <li>Sonia Margollé, web-developer</li>
+      <li>Ryan Williams, Lead Front End & Accessibility Engineer, Digital Commerce</li>
+      <li>Sambhavi Chandrashekar, Accessibility practitioner</li>
+      <li>Simon Jaeger, Accessibility Analyst, National Network for Equitable Library Service</li>
+      <li>Sara E. Temby, UX Accessibility Lead / SME, Microsoft</li>
+      <li>Andrea Mancini, Chief Experience Officer, Lascaux (Italy)</li>
+      <li>Kalicharan Pillai, CEO, Spectrum Technologies, Inc</li>
+      <li>KolaGayathri Pillai, CEO, Sattva Solutions, LLC</li>
+      <li>Craig Barrios, Web Development Enthusiast</li>
+      <li>Eduardo Gonçalves Pereira, Software Developer</li>
+      <li>Ingo Köpp, Software Developer at sipgate GmbH</li>
+      <li>Björn Witte, UX Design at sipgate GmbH</li>
+      <li>James Sheasby Thomas, QA Analyst, Oak National Academy</li>
+      <li>Daniel Bogod, Snr Front End Engineer, 383 Project</li>
+      <li>Stuart Shearing, Senior Digital Accessibility Specialist, GrackleDocs</li>
+      <li>Philipp Christoph Tautz, Accessibility Expert</li>
+      <li>Kyle Masuga, Frontend Web Developer, Accessibility Advocate</li>
+      <li>Timothy Wynn, self</li>
+      <li>Michael Niggel, Web Development Director, Hazard Creative</li>
+      <li>Béryl de La Grandière, designer UX</li>
+      <li>Mikey Ilagan, Accessibility Specialist and Product Manager</li>
+      <li>Bri Norton, Co-chair, OZeWAI.org</li>
+      <li>Eliseo Sciarretta, Web Accessibility Expert, Axess Design</li>
+      <li>SHIBATA Nobufumi, jidaikobo</li>
+      <li>Erin Bryant-Ross, Interim Vice President of Inclusion, Diversity, Equity, and Accessibility (IDEA), oSTEM, Inc.</li>
+      <li>Loïc Martínez Normand, Adjunct Professor, Universidad Politécnica de Madrid (Spain)</li>
+      <li>Alexandria Yeung, Digital Accessibility Specialist</li>
+      <li>Caitlynn Jones, Digital Designer, Digital Relativity</li>
+      <li>Justin Ferrell, Technical Director, Digital Relativity</li>
+      <li>Jonathan Danz, Director of Ad Ops and Analytics, Digital Relativity</li>
+      <li>Aaron Gooden, Web Developer, Digital Relativity</li>
+      <li>Carter Igo, Junior Developer, Digital Relativity</li>
+      <li>Kim Vigsbo, Accessibility Consultant, We Are Fish</li>
+      <li>Stéphane Lavoie, conseiller pédagogique RÉCIT </li>
+      <li>Peter Nelis, Owner, OGCdigital</li>
+      <li>Michel Joanisse, Accessibility Lead</li>
+      <li>Conor O’Neill (severely sight impaired), Senior Tester – Accessibility Specialist, iPipeline UK</li>
+      <li>Jason Crispin, CEO, Imagination</li>
+      <li>Meli Manak, UX Accessibilty Lead</li>
+      <li>Moritz Glantz, UX-Engineer and Accessibility Expert</li>
+      <li>Eve Crabb, Web Developer and a11y advocate</li>
+      <li>Jonathan Holden, pop pop studio</li>
+      <li>Zachary Taylor, Full Stack Engineer</li>
+      <li>Kirsten Thomas, Web Accessibility Engineer</li>
+      <li>Orla Pedersen, CEO for Inqlude IT in Denmark. CPACC certified professional.</li>
+      <li>Nick Sergeant, Owner, FLX Websites</li>
+      <li>Kevin Gervais, CTO @ Auto Genius</li>
+      <li>Todd Moon, Senior Accessibility Advisor</li>
+      <li>Enrico Bisenzi ABA Roma Teacher</li>
+      <li>Aaron Espinoza</li>
+      <li>Kathryn Albany-Ward, Founder and CEO Colour Blind Awareness CIC</li>
+      <li>Steel Wagstaff - Pressbooks</li>
+      <li>Lindsay Flax - Accessibility Professional</li>
+      <li>Melanie Sumner, W3C WAI-ARIA Working Group invited expert; Co-editor, Accessible Name and Description Specification</li>
+      <li>Dave House, Design System / Accessibility Designer, Self</li>
+      <li>Christine Otten, CPACC - Accessibility Professional</li>
+      <li>Ryan Mann - Certified Assistive Technology Instructional Specialist</li>
+      <li>Paul Lumsdaine - Accessibility Advocate</li>
+      <li>Catherine Sherry, Delivery Leader, Digital Accessibility at Onward Search</li>
+      <li>Adam Thiel, CPACC, Digital Accessibility Coordinator, Oklahoma ABLE Tech</li>
+      <li>Gino Lardon, UX & Accessibility Architect, Tangenz</li>
+      <li>Eroan Boyer, Web performance expert, Agence Web Performance</li>
+      <li>Karl Goldstraw, Senior Accessibility Designer</li>
+      <li>Sara Joy, Web Developer, Pirate Ship</li>
+      <li>Kaitlyn (Katie) Roberts, Web Accessibility Developer</li>
+      <li>Jonathan Blundell, Senior Director of DX, Dallas College</li>
+      <li>Christian Cousquer, Accessibility and Virtual Reality Consultant at Ilargia Inc.</li>
+      <li>Will Bubenik, Accessibility Consultant</li>
+      <li>Marianne Glover, Accessibility specialist</li>
+      <li>Sonny Darvish, UX and Accessibility Engineer at JobRad GmbH</li>
+      <li>Thomas Schemmer, Web Accessibility Specialist</li>
+      <li>Dan Keck, CPWA, Senior Web Application Developer, The Ohio State University</li>
+      <li>Aliyu Yisa, Cyber Security Professional and Co-Founder at Fezzant</li>
+      <li>Ashlee Fisher, Accessibilitiy Consultant, Semantic Fish Creative Group LLC</li>
+      <li>Ramón Corominas, Independent Accessibility Consultant and Trainer</li>
+      <li>Daniel Henderson-Ede, Accessibility Consultant, Mantis & Co.</li>
+      <li>Joakim Larsson, Frontend developer & Accessibility specialist, Knowit Experience</li>
+      <li>Jon Fredelius, WAS, Accessibility specialist, Consid</li>
+      <li>Gregor Heppel, UX Designer & Accessibility Consultant</li>
+      <li>Stephen Kelly, Lead Designer, The AA</li>
+      <li>Jacek Zadrożny, Accessibility expert, Certes sp. z o.o.</li>
+      <li>Ahmed Khalifa, Founder & Accessibility Specialist, PurpleByte</li>
+      <li>Ashleigh Lodge, Accessibility Advocate</li>
+      <li>Drew Herrema, Accessibility Specialist</li>
+      <li>Adam Cooper, Digital Accessibility Consultant</li>
+      <li>Mana Sugiyoshi, Frontend Engineer & Web Accessibility Specialist</li>
+      <li>Cat Johnson, Senior Frontend Engineer and Accessibility Expert, Khan Academy</li>
+      <li>Jen DeMesquita, CPWA, masters student in Disability Studies</li>
+      <li>Eric Barrette, CATIS, Director of Assistive Technology, Lighthouse of Broward</li>
+      <li>Andrew Harmon, Accessibility Tester (Independent Contractor)</li>
+      <li>Ettie Bailey-King, inclusive and accessible communication educator</li>
+      <li>Melanie Linares, CPWA</li>
+      <li>Diana Bernabei, Senior Accessibility Engineer, Inclusio</li>
+      <li>Stéphanie Walter, UX Research and Inclusive Designer</li>
+      <li>Jeff Fryer, MSIT, Sr Web & ADA Coordinator, City of Manitou Springs</li>
+      <li>Mahalli, Accessibility Staff, Universitas Brawijaya Center for Disability Services</li>
+      <li>Nat Tarnoff, Principal Accessibility Consultant, self</li>
+      <li>RJ Urquhart, Digital Accessibility Analyst</li>
+      <li>Elaine Shannon, Senior Web Developer</li>
+      <li>Andreas Krancher, Usability Engineer, Founder and CEO FOKUS UX</li>
+      <li>David Macarthur, Accessibility Consultant, Accessibility Now</li>
+      <li>Emma Urquhart, Senior Accessibility Consultant, Nexer Digital</li>
+      <li>Joe Schäfer, Senior Webdeveloper, Workmatrix GmbH, CEO of Schäfer - Büro für Webentwicklung</li>
+      <li>Josefine Schaefer, Accessibility Engineer & Consultant</li>
+      <li>Florian Uhlig, Accessibility Engineer & Consultant</li>
+      <li>Tine Lavrysen, Senior UX Designer, Researcher & Strategist (CPACC)</li>
+      <li>Manuel Sánchez, Web Accessibility Specialist (WAS), Die Zeit</li>
+      <li>David Henkelmann, Accessibility & Technology Consultant, H&amp;D GmbH</li>
+      <li>Mary Brunelle, Accessibility Consultant</li>
+      <li>Tie Wang-Jones, PhD, Global Head of Inclusive Design & Accessibility, Digital Inclusive Design, Equity & Accessibility Centre of Expertise (Digital IDEA CoE), IKEA Retail (Ingka Group)</li>
+      <li>Sandra Koning, Software Engineer</li>
+      <li>Olga Carreras Montoto, WAS, Independent accessibility consultant</li>
+      <li>Scott Erichsen, Accessibility professional</li>
+      <li>Julia Undeutsch, Accessibility Specialist</li>
+      <li>Amin Amini, Accessibility Specialist (CPAAC), Axess Lab </li>
+      <li>Claudio Nanni, Founder, Kappesante.com</li>
+      <li>Matthew Zillhardt, Senior UX Designer and accessibility consultant</li>
+      <li>Crystal Scott, CPWA, Web Accessibility Engineer & CEO, Graceful Web Studio</li>
+      <li>Erik Jansson, IT-specialist, educator, and development team coach </li>
+      <li>Andrea Combs, Account Executive, Onward Accessibility</li>
+      <li>Stéphanie Ramon, Web Accessibility Consultant, AnySurfer</li>
+      <li>Vayia Malamidou, CPWA, Digital Accessibility Consultant</li>
+      <li>Olivia Richter, Owner, Ideenquelle Agentur</li>
+      <li>Nick Torres, Accessibility Advocate</li>
+      <li>Carlos Esteban Martínez Macías, Musician and teacher of technology for people with visual disabilities.</li>
+      <li>Mikey Binns, Web developer</li>
+      <li>Mike Carson, CPACC, Digital Accessibility Advisor</li>
+      <li>Matt D Woodman, Product Design Engineer</li>
+      <li>Maria Kaffa, Accessibility Specialist, Springer Nature</li>
+      <li>Indre Karlove, Web Accessibility Specialist (WAS), June / Karlove</li>
+      <li>Khushwant Parihar, Web Accessibility Specialist, Self</li>
+      <li>Xavi Cardet, Senior Product Designer and Accessibility Specialist</li>
+      <li>Edoardo D'Amore, UX Researcher and Certified Web Accessibility Expert, Hedron srl</li>
+      <li>Giacomo Bosio, CEO and Certified Web Accessibility Expert, Hedron srl</li>
+      <li>Frederik Vantroys, Consultant Accessibility-Centered , Agicon</li>
+      <li>Natalie MacLees, Founder, AAArdvark</li>
+      <li>Britne Jenke, CPACC, Accessibility Consultant and Trainer, Inclusive Pixelation</li>
+      <li>Jason Ament, Accessibility Subject Matter Expert, Expedia</li>
+      <li>Dr. Nicole L'Etoile, CPACC</li>
+      <li>Mike Masey, Full Stack Developer, Consultant, Facilitator and Accessibility Specialist</li>
+      <li>Thomas Skerbis, CEO and Full Stack Developer</li>
+      <li>Joe Humbert, Accessibility professional</li>
+      <li>Christoph Dubach, CPACC, UX Architect</li>
+      <li>Novella C., Frontend Software Engineer</li>
+      <li>Andrew Hedges, Co-Founder, Assistiv Labs</li>
+      <li>Franziska Köppe, madiko Manufaktur für Lebens- & Arbeitswelten mit Zukunft</li>
+      <li>Abi Harrison-Nye, Software Engineer</li>
+      <li>Rose Lewis, CPWA, Digital Accessibility Specialist</li>
+      <li>Zeeshan Lakdawala, Account Executive, Deque Systems, Inc.</li>
+      <li>Emily von Känel, Agency Management, ALLES + JEDEN GmbH</li>
+      <li>Christoph Konitzer, CPWA, CEO ALLES + JEDEN GmbH</li>
+      <li>Julia Buchwald, Digital Accessibility Consultant</li>
+      <li>Doug Schepers, Founder and CEO, Fizz Studio</li>
+      <li>Joshua Smith, CPACC</li>
+      <li>Stacy Kess, Founder and chief of editorial, Equal Access Public Media</li>
+      <li>Shaun Bent, Design Systems & Accessibility Consultant</li>
+      <li>Juana Poareo, Founder, Being Access-able</li>
+    </ol>
+    <p>
+      <a class="add-your-name" href="https://github.com/karlgroves/overlayfactsheet/#endorse-this-statement">
+        Ajoutez votre nom à cette liste
+      </a>
+    </p>
+  </div>
+</main>
+
+<aside class="further-reading">
+  <div class="container">
+    <h2 id="additional-reading">Lectures complémentaires</h2>
+    <ul>
+      <li>
+        <a href="https://www.nngroup.com/articles/screen-reader-users-on-mobile/">Challenges for Screen-Reader Users on Mobile</a>
+        <span class="further-reading-source">Tanner Kohler - Nielsen Norman Group</span>
+      </li>
+      <li>
+        <a href="https://adrianroselli.com/2020/06/accessibe-will-get-you-sued.html">accessiBe will get you sued</a>
+        <span class="further-reading-source">Adrian Roselli</span>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=e-3xlUarxRQ">5 False Claims 1-Line “AI” Accessibility Script Vendors
+          Make</a>
+        <span class="further-reading-source">Eric Eggert</span>
+      </li>
+      <li>
+        <a href="https://www.lflegal.com/2020/08/quick-fix/">Honor the ADA: Avoid Web Accessibility Quick-Fix
+          Overlays</a>
+        <span class="further-reading-source">Lainey Feingold</span>
+      </li>
+      <li>
+        <a
+          href="https://sheribyrnehaber.medium.com/overlays-are-not-the-solution-to-your-accessibility-problem-c5ffe44bd61f">Overlays
+          are not the solution to your accessibility problem</a>
+        <span class="further-reading-source">Sheri Byrne-Haber</span>
+      </li>
+      <li>
+        <a href="https://www.tpgi.com/bolt-on-accessibility-5-gears-in-reverse/">Bolt-on Accessibility – 5 gears in
+          reverse</a>
+        <span class="further-reading-source">Steven Faulkner</span>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/pulse/deploying-accessibility-overlay-widget-better-than-doing-springer">Is
+          Deploying an Accessibility Overlay or Widget Better Than Doing Nothing?</a>
+        <span class="further-reading-source">Timothy Springer</span>
+      </li>
+      <li>
+        <a href="https://logictran.com/2020/08/24/the-trouble-with-accessibility-overlays/">The Trouble with
+          Accessibility Overlays</a>
+        <span class="further-reading-source">Alex Tran</span>
+      </li>
+      <li>
+        <a href="https://medium.com/@krisrivenburgh/the-death-of-accessibility-overlays-5603515d8250">The Death of
+          Accessibility Overlays</a>
+        <span class="further-reading-source">Kris Rivenburgh</span>
+      </li>
+      <li>
+        <a href="https://accessdefense.com/?p=5378">Is there a silver bullet for ADA website accessibility? Sorry, but
+          the answer is no.</a>
+        <span class="further-reading-source">Richard Hunt</span>
+      </li>
+      <li>
+        <a href="https://www.propellermediaworks.com/blog/avoid-web-accessibility-overlay-toolbars/">Overlay
+          Accessibility Solutions Fail ADA Website Compliance</a>
+        <span class="further-reading-source">Propeller Media Works</span>
+      </li>
+      <li>
+        <a href="https://karlgroves.com/2018/05/25/automated-lies-with-one-line-of-code">Automated Lies, with one line
+          of code</a>
+        <span class="further-reading-source">Karl Groves</span>
+      </li>
+      <li>
+        <a href="https://www.lalutineduweb.fr/en/web-accessibility-overlays-lies-gum-balls/">Web accessibility overlay
+          tools: lies
+          and gum balls</a>
+        <span class="further-reading-source">Julie Moynat</span>
+      </li>
+      <li>
+        <a href="https://www.scribd.com/document/490740167/Exhibit-A-for-21-cv-00017">Sole reliance on accessiBe will
+          not be sufficient in ensuring full and equal access to a website</a>
+        <span class="further-reading-source">Exhibit A 21-cv-00017, Murphy v. Eyebobs</span>
+      </li>
+      <li>
+        <a href=" https://www.a11yproject.com/posts/2021-03-08-should-i-use-an-accessibility-overlay/">Should I use an
+          accessibility overlay?</a>
+        <span class="further-reading-source">The A11y Project</span>
+      </li>
+      <li>
+        <a href="https://www.joedolson.com/2021/03/the-dangerous-path-of-the-accessibility-overlay/">The Dangerous
+          Path of the Accessibility Overlay</a>
+        <span class="further-reading-source">Joe Dolson</span>
+      </li>
+      <li>
+        <a href="https://allerlay.com/de/accessibility-widgets-wie-barrierefrei-machen-sie-deine-website/">Swiss
+          article in German:<span
+            lang="de-CH">Accessibility-Widgets: Wie barrierefrei machen sie deine Website?</span></a>
+        <span class="further-reading-source">Allerlay</span>
+      </li>
+      <li><a
+        href="https://barrierekompass.de/aktuelles/detail/guenstig-oder-kostenlos-barrierefrei-mit-kuenstlicher-intelligenz-ki.html">German
+        Article on Overlays: <span
+          lang="de-DE">Günstig oder kostenlos – barrierefrei mit Künstlicher Intelligenz (KI)?</span></a>
+        <span class="further-reading-source" lang="de-DE">Barriere Kompass</span>
+      </li>
+      <li><a href="https://creative-boost.com/overlays-and-plugins-arent-the-answer-to-accessibility/">Overlays and Plugins Aren’t the Answer to Accessibility</a>
+        <span class="further-reading-source">Design Domination Podcast</span></li>
+      <li><a
+        href="https://www.vice.com/en/article/m7az74/people-with-disabilities-say-this-ai-tool-is-making-the-web-worse-for-them">People
+        With Disabilities Say This AI Tool Is Making the Web Worse for Them</a><span class="further-reading-source">Vice Media</span>
+      </li>
+      <li><a href="https://www.ictaccessibilitytesting.org/ict-2020-overlays-panel/">ICT Accessibility Testing Symposium
+        2020 Overlays Panel (Recording and Transcript)</a>
+        <span class="further-reading-source">Karl Groves, Al Hoffman, Anil Lewis, David O’Neill, Cyndi Rowland, Chris M. Law</span>
+      </li>
+      <li><a href="https://www.nbcnews.com/tech/innovation/blind-people-advocates-slam-company-claiming-make-websites-ada-compliant-n1266720">
+        Blind people, advocates slam company claiming to make websites ADA compliant</a> <span class="further-reading-source">NBC News</span></li>
+      <li><a href="https://www.forbes.com/sites/gusalexiou/2021/06/26/largest-us-blind-advocacy-group-bans-web-accessibility-overlay-giant-accessibe/?sh=6057fc125a15">
+        Largest U.S. Blind Advocacy Group Bans Web Accessibility Overlay Giant AccessiBe</a> <span class="further-reading-source">Forbes Magazine</span></li>
+        <li><a href="https://tink.uk/accessibe-and-data-protection/">AccessiBe and data protection?</a> <span class="further-reading-source">Léonie Watson</li>
+      <li><a href="https://www.lflegal.com/2021/11/overlay-legal-update/">Legal Update: Accessibility Overlay Edition</a> <span class="further-reading-source">Lainey Feingold</li>
+      <li><a href="https://overlayfalseclaims.com/">Truth in advertising does not exist for overlay vendors: False claims at the expense of customers and persons with disabilities.<span class="further-reading-source">Karl Groves and Michael Beck</span> </a> </li>
+      <li>
+        <a href="https://accessibleweb.com/web-accessibility-news/do-away-with-overlays/">Do Away with Overlays</a>
+        <span class="further-reading-source">Accessible Web</span>
+      </li>
+        <li><a href="https://www.lflegal.com/2021/12/adp-settlement/">HR and Payroll Software Leader ADP to Enhance Product Accessibility</a>
+          <span class="further-reading-source">Lainey Feingold</span></li>
+      <li>
+        <a href="https://adrianroselli.com/2021/09/userway-will-get-you-sued.html">UserWay will get you sued</a>
+        <span class="further-reading-source">Adrian Roselli</span>
+      </li>
+      <li>
+        <a href="https://www.numerama.com/politique/759804-faciliti-la-solution-pour-linclusion-en-ligne-qui-refuse-la-critique.html" hreflang="fr" lang="fr">FACIL’iti, la solution pour l’inclusion en ligne qui refuse la critique?</a>
+        <span class="further-reading-source">Numerama</span>
+      </li>
+      <li>
+        <a href="https://www.wired.com/story/company-tapped-ai-website-landed-court/">This Company Tapped AI for Its Website—and Landed in Court</a>
+        <span class="further-reading-source">Wired</span>
+      </li>
+      <li>
+        <a href="https://adrianroselli.com/2022/03/faciliti-will-get-you-sued.html">FACIL’iti Will Get You Sued</a>
+        <span class="further-reading-source">Adrian Roselli</span>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=RDkqJaBwgKU">Overlays Underwhelm (at YouTube)</a>
+        <span class="further-reading-source">Adrian Roselli for a11yNYC</span>
+      </li>
+      <li>
+        <a href="https://adrianroselli.com/2022/04/my-cease-desist-from-audioeye.html">My Cease & Desist from AudioEye</a>
+        <span class="further-reading-source">Adrian Roselli</span>
+      </li>
+        <li><a href="https://convergeaccessibility.com/2022/05/09/a-different-view-into-accessibility-overlays/">A different view into accessibility overlays</a>
+          <span class="further-reading-source">Converge Accessibility</span></li>
+      <li>
+        <a href="https://www.nytimes.com/2022/07/13/technology/ai-web-accessibility.html?unlocked_article_code=AAAAAAAAAAAAAAAACEIPuomT1JKd6J17Vw1cRCfTTMQmqxCdw_PIxftm3iWka3DKDm8ZiPgYCIiG_EPKarskbtp2wDmRAdZKO7I0X_14z-teI10rSxWtptHMvqU5FBgPiND5WHIqjdWKVKok8DTuYy7peepzneO07lfZOzO-RKCJ0yE-d1k18Y9vfA753nwJz_zAE-Rly5Ipi6dac5N5RjgAYyGLuvP6WV4paJjdMEaqukRhUPpZWDrTgdeZ97oBFQ1SAl7MR3p7in0uvJIeYJhEefaicGNzPZb2kr4TCWd3LYa2B5ZXR4Pck7RisLGlugXZjNRJGDCbYdUTTQ5ATpvV&smid=url-share">For Blind Internet Users, the Fix Can Be Worse Than the Flaws</a>
+        <span class="further-reading-source">New York Times</span>
+      </li>
+        <li><a href="https://www.forbes.com/sites/gusalexiou/2021/10/28/why-automated-tools-alone-cant-make-your-website-accessible-and-legally-compliant/?sh=3a83983a364e">Why Automated Tools Alone Can’t Make Your Website Accessible And Legally Compliant</a> <span class="further-reading-source">Forbes</span></li>
+        <li><a href="https://karlgroves.com/the-overlay-personalization-farce/">The Overlay Personalization Farce</a> <span class="further-reading-source">Karl Groves</span></li>
+        <li><a href="https://adrianroselli.com/2023/02/audioeye-will-get-you-sued.html">AudioEye will get you sued</a> <span class="further-reading-source">Adrian Roselli</span></li>
+        <li><a href="https://www.edf-feph.org/accessibility-overlays-dont-guarantee-compliance-with-european-legislation/">Accessibility overlays don’t guarantee compliance with European legislation</a>
+        <span class="further-reading-source">The European Disability Forum (EDF) and International Association of Accessibility Professionals (IAAP)</span>
+        </li>
+      <li><a href="https://archive.is/MRhll">Blind internet users struggle with error-prone AI aids</a> <span class="further-reading-source">Financial Times</span></li>
+      <li><a href="https://www.bfit-bund.de/DE/Publikation/einschaetzung-overlaytools.html">Gemeinsame Einschätzung der Überwachungsstellen des Bundes und der Länder für die Barrierefreiheit von Informationstechnik zum Einsatz von Overlay-Tools</a> (Joint assessment of the federal and state monitoring bodies for the accessibility of information technology on the use of overlay tools) <span class="further-reading-source">Federal Monitoring Agency forAccessibility of Information Technology ( BFIT-Bund ) </span></li>
+      <li><a href="https://web.archive.org/web/20250104000241/https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-order-requires-online-marketer-pay-1-million-deceptive-claims-its-ai-product-could-make-websites">FTC Order Requires Online Marketer to Pay $1 Million for Deceptive Claims that its AI Product Could Make Websites Compliant with Accessibility Guidelines</a><span class="further-reading-source">US Federal Trade Commission</span></li>
+      <li><a href="https://adrianroselli.com/2025/01/ftc-catches-up-to-accessibe.html">FTC Catches Up To AccessiBe</a><span class="further-reading-source">Adrian Roselli</span></li>
+
+        </ul>
+  </div>
+</aside>
+</body>
+</html>
