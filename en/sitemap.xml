@@ -2,46 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://overlayfactsheet.com/en/</loc>
+    <loc>https://teodorachiosa.github.io/overlayfactsheet/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://overlayfactsheet.com/fr/"
+                href="https://teodorachiosa.github.io/overlayfactsheet/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
-                href="https://overlayfactsheet.com/pt-br/"
+                href="https://teodorachiosa.github.io/overlayfactsheet/pt-br/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://overlayfactsheet.com/ja/"
+                href="https://teodorachiosa.github.io/overlayfactsheet/ja/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://overlayfactsheet.com/de/"
+                href="https://teodorachiosa.github.io/overlayfactsheet/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id"
-                href="https://overlayfactsheet.com/id/"
+                href="https://teodorachiosa.github.io/overlayfactsheet/id/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://overlayfactsheet.com/nl/"
+                href="https://teodorachiosa.github.io/overlayfactsheet/nl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ro"
-                href="https://overlayfactsheet.com/ro/"
+                href="https://teodorachiosa.github.io/overlayfactsheet/ro/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://overlayfactsheet.com/en/"
+                href="https://teodorachiosa.github.io/overlayfactsheet/en/"
                 />
   </url>
 </urlset>
